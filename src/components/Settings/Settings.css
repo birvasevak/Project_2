@@ -1,0 +1,30 @@
+.setting-icon {
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  align-items: right;
+  padding: 0rem;
+  background-color: #fff;
+  top: 3rem;
+  float: right;
+  margin: 0;
+  cursor: auto;
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
+  box-sizing: border-box;
+}
+
+.settings-dropdown {
+  position: absolute;
+  display: none;
+  background: #fff;
+  margin-left: -94px;
+  border: 1px solid #e5e5e5;
+  z-index: 1000;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto";
+  color: #0b4c5e;
+  font-size: 0.9375rem;
+}
