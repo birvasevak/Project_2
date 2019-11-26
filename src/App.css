@@ -52,12 +52,11 @@
 .header__nav {
   clear: both;
   height: 85px;
-  background: #e7088a;
+  background: #f958b6;
   text-align: center;
   z-index: 900;
   width: 100%;
 }
-
 .nav__list {
   list-style: none;
   margin: 0px;
@@ -65,23 +64,71 @@
   padding: 0px;
   width: 100%;
 }
-
 .nav__item--active {
   background: #e7088a;
 }
 
-.nav__icon--library {
-  width: 60px;
-  height: 60px;
-  background-color:pink;
-  background-position: -60px 0;
+.nav__item:hover {
+  background: #692f51;
 }
-
 .nav__item {
   display: table-cell;
   padding: 2px 25px 13px;
   position: relative;
 }
+.nav__link {
+  color: #fff;
+  font-size: 0.9375rem;
+  line-height: 0.625rem;
+  text-align: center;
+  text-decoration: none;
+}
+.nav__icon--projects {
+  margin: 0px auto;
+  width: 60px;
+  height: 60px;
+  background: url(./site_media/Images/Menu_Projects.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.nav__icon--homepage {
+  margin: 0px auto;
+  width: 60px;
+  height: 60px;
+  background: url(./site_media/Images/Menu_UC.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.nav__icon--spotlight {
+  margin: 0px auto;
+  width: 60px;
+  height: 60px;
+  background-image: url(./site_media/Images/Menu_Spotlight.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.nav__icon--friends {
+  margin: 0px auto;
+  width: 60px;
+  height: 60px;
+  background: url(./site_media/Images/Menu_Friends.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.nav__icon--yearbook {
+  margin: 0px auto;
+  width: 60px;
+  height: 60px;
+  background: url(./site_media/Images/Menu_Photos.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+
+
+
+
+
 
 .container {
   width: 100%;
@@ -142,11 +189,11 @@
   width: 22%;
   right: 75%;
   left: 0%;
-  color: teal;
+  color: white;
 }
 
 .profile__wrapper {
-  background: #eff8fa;
+  background: #e7088a;
   border-radius: 12px;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -156,6 +203,7 @@
   text-align: center;
   margin-bottom: 25px;
   padding-bottom: 25px;
+  background: url(./site_media/Images/dotted-line.png) repeat-x left bottom;
 }
 
 .profile__name {
