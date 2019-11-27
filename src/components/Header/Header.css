@@ -1,39 +1,368 @@
-/* src/components/Header/Header.css */
-i.Nav {
-  background-color: #fff;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.0975);
-  position: relative;
-  /* top: 0; */
+/* new header */
+
+.header {
   width: 100%;
-  max-width: 62.5rem;
-  /* z-index: 2; */
-  /* -webkit-transition: height 0.2s ease-in-out;
-  transition: height 0.2s ease-in-out; 
-  height: 77px;*/
-  max-width: 62.5rem;
   margin-left: auto;
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 0;
-  line-height: 1.5;
-  cursor: auto;
+  max-width: 62.5rem;
+  background: #fff;
 }
-.Nav-menus {
-  display: flex;
-  flex-direction: row;
-  height: 60px;
-  width: 70%;
-  margin: 0 auto;
-  padding: 26px 40px;
-  background-color: #fff;
+
+@media only screen and (max-width: 40em) {
+  .header {
+    background: #e7088a;
+    height: 70px;
+    overflow: hidden;
+  }
 }
-.Nav-brand-logo {
+
+/* header logo main */
+.header__logo {
+  float: left;
+  margin: 28px 0px 0px 20px;
+}
+
+@media only screen and (max-width: 40em) {
+  .header__logo.main {
+    margin: 10px 0px 10px;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 40em) {
+  .header__logo-desktop {
+    display: none;
+  }
+}
+
+.header__logo-mobile {
+  margin: 10px 0px 15px;
+  /* margin-top: 10px;
+  margin-bottom: 0px; */
+  width: 150px;
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
+}
+
+@media only screen and (min-width: 40.063em) {
+  .header__logo-mobile {
+    display: none;
+  }
+}
+
+/* header mobile child select */
+
+.header__mobile-child-select {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 100px;
+}
+
+@media only screen and (min-width: 40.063em) {
+  .header__mobile-child-select {
+    display: none;
+  }
+}
+
+.child-select__item {
+  overflow: hidden;
+  padding: 0px 50px 10px 20px;
+  position: relative;
+  min-width: 255px;
+}
+
+.header__mobile-child-select .child-select__item {
+  background: none;
+  min-width: 0;
+}
+
+@media only screen and (max-width: 40em) {
+  .child-select__item:first-child {
+    border-radius: 12px 12px 0px 0px;
+  }
+}
+
+@media only screen and (max-width: 40em) {
+  .child-select__item:last-child {
+    border-radius: 0px 0px 12px 12px;
+  }
+}
+
+@media only screen and (max-width: 40em) {
+  .child-select__item {
+    background: #ffaacc;
+    padding: 0px;
+  }
+}
+
+.header__child-select:hover .child-select__dropdown-menu {
   display: block;
-  background-position: 35px 0px;
-  background-image: url(../../image/desktop_logo1.png);
-  background-size: 250px 75px;
-  background-repeat: no-repeat;
-  height: 500px;
-  width: 800px;
-  text-indent: -1000%;
+  cursor: pointer;
 }
+
+.header__mobile-child-select .child-select__avatar {
+  margin-top: 2px;
+}
+
+.child-select__avatar--mobile-header {
+  width: 55px;
+  height: 55px;
+}
+
+.child-select__avatar {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 50%;
+  overflow: hidden;
+  display: block;
+  float: left;
+}
+
+@media only screen and (max-width: 40em) {
+  .child-select__avatar {
+    width: 50px;
+    height: 50px;
+    margin: 20px 0px 10px 10px;
+    border: 5px solid #fff;
+  }
+}
+
+/* header toolbar logged in*/
+.header__toolbar {
+  float: right;
+  height: 100px;
+}
+
+@media only screen and (max-width: 40em) {
+  .header__toolbar.logged-in {
+    height: 0px;
+  }
+}
+
+@media only screen and (max-width: 40em) {
+  .header__toolbar {
+    background: #fff;
+    height: 60px;
+  }
+}
+
+.header__child-select {
+  position: relative;
+  float: left;
+  margin-top: 40px;
+}
+
+.child-select__item--main {
+  overflow: hidden;
+  padding: 0px 50px 10px 20px;
+  position: relative;
+  min-width: 255px;
+  margin: 0;
+  padding: 0;
+}
+
+@media only screen and (max-width: 40em) {
+  .child-select__item--main {
+    display: none;
+  }
+}
+
+.child-select__item {
+  overflow: hidden;
+  padding: 0px 50px 10px 20px;
+  position: relative;
+  min-width: 255px;
+}
+
+@media only screen and (max-width: 40em) {
+  .child-select__item:last-child {
+    border-radius: 0px 0px 12px 12px;
+  }
+}
+
+@media only screen and (max-width: 40em) {
+  .child-select__item:first-child {
+    border-radius: 12px 12px 0px 0px;
+  }
+}
+
+@media only screen and (max-width: 40em) {
+  .child-select__item {
+    background: #1e8e95;
+    padding: 0px;
+  }
+}
+
+.child-select__info {
+  display: block;
+  overflow: hidden;
+  /* margin-left: 65px; */
+}
+
+@media only screen and (max-width: 40em) {
+  .child-select__info {
+    margin-left: 110px;
+    margin-top: 10px;
+  }
+}
+
+.child-select__name {
+  display: block;
+  margin-top: 12px;
+  font-size: 1.0625rem;
+  font-weight: 300;
+  color: #0b4c5e;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 40em) {
+  .child-select__name {
+    color: #fff;
+    font-size: 1.25rem;
+    margin-bottom: 5px;
+    font-weight: normal;
+  }
+}
+
+.dropdown-icon {
+  background: url(../../image/dropdown_icon.png);
+  width: 10px;
+  height: 6px;
+  display: inline-block;
+  margin-bottom: 2px;
+  margin-left: 12px;
+}
+
+.child-select__dropdown-menu {
+  position: absolute;
+  display: none;
+  min-width: 100%;
+  background: #fff;
+  padding: 0px;
+  z-index: 1000;
+  border: 1px solid #e5e5e5;
+}
+
+@media only screen and (max-width: 40em) {
+  .child-select__dropdown-menu {
+    border: 0px;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    background: #117076;
+    overflow: auto;
+  }
+}
+
+@media only screen and (min-width: 40.063em) {
+  .child-select__header {
+    display: none;
+  }
+}
+
+.header-menu-mobile {
+  float: right;
+  margin-right: 20px;
+  margin-top: 15px;
+  padding: 10px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.child-select-title-mobile {
+  font-size: 1.3125rem;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+}
+
+@media only screen and (min-width: 40.063em) {
+  .child-select-title-mobile {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 40em) {
+  .child-select__dropdown-menu-wrapper {
+    padding: 20px;
+  }
+}
+
+.child-select__item--dropdown {
+  padding: 10px 20px 10px 20px;
+  display: block;
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 40.063em) {
+  .selected-child {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 40em) {
+  .child-select__item:first-child {
+    border-radius: 12px 12px 0px 0px;
+  }
+}
+
+@media only screen and (max-width: 40em) {
+  .child-select__item {
+    background: #1e8e95;
+    padding: 0px;
+  }
+}
+
+/* in toolbar.css file
+ .child-select__profile {
+  overflow: hidden;
+}
+
+.child-select__name {
+  display: block;
+  margin-top: 12px;
+  font-size: 1.0625rem;
+  font-weight: 300;
+  color: #0b4c5e;
+}
+
+@media only screen and (max-width: 40em) {
+  .child-select__name {
+    color: #fff;
+    font-size: 1.25rem;
+    margin-bottom: 5px;
+    font-weight: normal;
+  }
+}
+
+.child-select__age {
+  display: block;
+  color: #fff;
+  font-size: 0.9375rem;
+  margin-bottom: 15px;
+}
+
+@media only screen and (min-width: 40.063em) {
+  .child-select__age {
+    display: none;
+  }
+} */
+
+/* child-select milestones*/
+
+/* header mobile toolbar */
+
+/* mobile toolbar menu */

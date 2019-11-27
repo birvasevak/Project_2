@@ -1,12 +1,17 @@
+.header__settings {
+  float: right;
+  margin-right: 10px;
+  margin-top: 50px;
+}
+
 .setting-icon {
   line-height: 1.5;
   position: relative;
   display: inline-block;
   align-items: right;
   padding: 0rem;
-  background-color: #fff;
-  top: 3rem;
-  float: right;
+  top: 1.5rem;
+  /* float: right; */
   margin: 0;
   cursor: auto;
   vertical-align: middle;
@@ -24,7 +29,33 @@
   z-index: 1000;
   margin: 0;
   padding: 0;
-  font-family: "Roboto";
+  /* font-family: "Roboto"; */
   color: #0b4c5e;
   font-size: 0.9375rem;
+}
+
+.settings-dropdown__item {
+  font-size: 1.0625rem;
+  font-weight: 300;
+  font-family: TeX;
+  color: #0b4c5e;
+  padding: 10px 30px 10px 20px;
+  margin: 0;
+  cursor: pointer;
+  /* box-sizing: border-box; */
+}
+/* .settings-dropdown__item a {
+  line-height: inherit;
+} */
+
+.logout-link {
+  text-decoration: none;
+}
+
+.settings-dropdown__item:hover {
+  background: lightblue;
+}
+
+.setting-icon:hover .settings-dropdown {
+  display: block;
 }

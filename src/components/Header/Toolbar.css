@@ -1,0 +1,127 @@
+.child-select__profile {
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.child-select__name {
+  display: block;
+  margin-top: 12px;
+  font-size: 1.0625rem;
+  font-weight: 300;
+  color: #0b4c5e;
+}
+
+@media only screen and (max-width: 40em) {
+  .child-select__name {
+    color: #fff;
+    font-size: 1.25rem;
+    margin-bottom: 5px;
+    font-weight: normal;
+  }
+}
+
+.child-select__age {
+  display: block;
+  color: #fff;
+  font-size: 0.9375rem;
+  margin-bottom: 15px;
+}
+
+@media only screen and (min-width: 40.063em) {
+  .child-select__age {
+    display: none;
+  }
+}
+
+.child-select__name--add-child {
+  text-align: center;
+  margin-top: 0px;
+}
+
+@media only screen and (max-width: 40em) {
+  .child-select__item--add-child .child-select__name {
+    content: "";
+  }
+}
+
+@media only screen and (max-width: 40em) {
+  .child-select__name {
+    color: #fff;
+    font-size: 1.25rem;
+    margin-bottom: 5px;
+    font-weight: normal;
+  }
+}
+
+@media only screen and (max-width: 40em) {
+  .add-child-web {
+    display: none;
+  }
+}
+
+.add-child-mobile {
+  margin: 20px 0px;
+  display: block;
+}
+
+@media only screen and (min-width: 40.063em) {
+  .add-child-mobile {
+    display: none;
+  }
+}
+
+.child-select__item:hover {
+  background: lightblue;
+}
+
+/* .child-select__item--dropdown .child-select__item:hover {
+  background: lightblue;
+} */
+/* .child-select__milestone {
+  display: block;
+  float: left;
+  width: 20%;
+}
+
+.radial-progress {
+  margin: 10px auto;
+  width: 50px;
+  height: 50px;
+  background-color: #dbe1e4;
+  border-radius: 50%;
+}
+
+.radial-progress .circle .mask {
+  clip: rect(0px, 50px, 50px, 25px);
+}
+
+.radial-progress[data-progress="0"] .circle .mask.full,
+.radial-progress[data-progress="0"] .circle .fill {
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.radial-progress .circle .mask .fill.all-skills {
+  background-color: #f58821;
+}
+
+.radial-progress .inset {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  margin-left: 5px;
+  margin-top: 5px;
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 10px 0px;
+  text-align: center;
+  font-size: 12px;
+}
+
+.child-select__milestone-label {
+  font-size: 0.6875rem;
+  color: #aed3d6;
+  width: 100%;
+  text-align: center;
+} */
