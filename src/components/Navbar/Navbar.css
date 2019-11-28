@@ -6,6 +6,15 @@
   z-index: 900;
   width: 100%;
 }
+
+@media only screen and (max-width: 40em) {
+  .header__nav {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+  }
+}
+
 .nav__list {
   list-style: none;
   margin: 0px;
@@ -13,6 +22,7 @@
   padding: 0px;
   width: 100%;
 }
+
 .nav__item--active {
   background: #e7088a;
 }
@@ -25,6 +35,13 @@
   padding: 2px 25px 13px;
   position: relative;
 }
+
+@media only screen and (max-width: 40em) {
+  .nav__item {
+    padding: 2px 0px 13px;
+  }
+}
+
 .nav__link {
   color: #fff;
   font-size: 0.9375rem;
