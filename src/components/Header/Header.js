@@ -1,5 +1,5 @@
 // src/components/Header/index.js
-import React from "react";
+import React, { Component } from "react";
 import { Button } from "react";
 import "./Header.css";
 import Settings from "../Settings/Settings";
@@ -23,7 +23,6 @@ class Header extends React.Component {
             ></div>
           </div>
         </div>
-        {/* div */}
         <div className="header__logo main">
           <a href="/">
             <img
@@ -85,9 +84,8 @@ class Header extends React.Component {
               <Toolbar />
             </div>
           </div>
+          <Settings />
         </div>
-        {/* <Toolbar /> */}
-        {/* <Settings /> */}
       </header>
     );
   }

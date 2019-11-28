@@ -1,11 +1,11 @@
 /*This is for the format of the whole app*/
 .App {
   height: 100%;
-  background: #36b1ad;
+  background: #e7088a;
 }
-/*
-.App-header {
-  background-color: #282c34;
+
+/* .App-header {
+  background-color: white;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -13,7 +13,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}*/
+} */
 
 .content-wrapper {
   width: 100%;
@@ -22,9 +22,11 @@
   margin-top: 0;
   margin-bottom: 0;
   max-width: 62.5rem;
-  border: 12px solid rgba(255, 255, 255, 0.5);
+  /* border: 12px solid rgba(128, 57, 57, 0.5); */
+  border: 12px solid #fdcfe2;
   border-top: 0px;
   border-radius: 0px 0px 10px 10p;
+  background-color: white;
 }
 
 .header__toolbar {

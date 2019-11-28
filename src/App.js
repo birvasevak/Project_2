@@ -1,8 +1,11 @@
 import React from "react";
 import "./App.css";
+import "./components/Header/Header.css";
 import { Component } from "react";
 import Header from "./components/Header/Header";
 import Navbar from "./components/Navbar/Navbar";
+import Mobile_logo from "./image/Logo-mobile.png";
+import Desktop_logo from "./image/desktop_logo.png";
 //import UnicornHeart from "../src/site_media/Bottom Menu_Home_Unicorn Heart.png"
 //import Toolbar from './components/Toolbar/Toolbar';
 //import sideDrawer from './components/SideDrawer/SideDrawer';
