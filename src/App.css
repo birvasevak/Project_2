@@ -1,4 +1,5 @@
 /*This is for the format of the whole app*/
+
 .App {
   height: 100%;
   background: #e7088a;
@@ -22,12 +23,16 @@
   border-top: 0px;
   border-radius: 0px 0px 10px 10p;
   background-color: #fff;
+  min-height: 1000px;
 }
-@media only screen and (max-width: 40em){
+
+@media only screen and (max-width: 40em) {
   .content-wrapper {
     border: 0px;
   }
 }
+
+/* move other className styles to respective files (later) */
 
 .container {
   width: 100%;
@@ -40,63 +45,9 @@
   padding-top: 30px;
   padding-bottom: 30px;
 }
-
-@media only screen and (max-width: 40em){
+@media only screen and (max-width: 40em) {
   .container {
     padding-bottom: 0px;
     padding-top: 0px;
   }
-}
-
-.main-view {
-  position: relative;
-  padding-left: 0.9375rem;
-  padding-right: 0.9375rem;
-  border-radius: 12px;
-  border-style: solid;
-  border-color: #716E70;
-  border-width: 1px;
-  width: 45%;
-  left: 25%;
-  right: 30%;
-  float: left;
-  background: #fff;
-}
-
-.Tool-guide{
-  position: relative;
-  padding-left: 0.9375rem;
-  padding-right: 0.9375rem;
-  border-radius: 12px;
-  border-style: solid;
-  border-color: #716E70;
-  border-width: 1px;
-  width: 22%;
-  right: 1%;
-  float:right;
-  background-color: #fff;
-}
-
-.page-title {
-  text-align: left;
-  color: black;
-  font-size: 1.75rem;
-  padding-left: 20px;
-}
-
-.page-undertitle {
-  padding-left: 20px;
-  padding-right: 20px;
-  color: #0b4c5e;
-  font-size: 1rem;
-  line-height: 1.25rem;
-  font-weight: 300 !important;
-  margin-bottom: 15px;
-}
-
-.Help-Bar{
-  text-align: left;
-  color: black;
-  font-size: 1.75rem;
-  padding-left: 20px;
 }

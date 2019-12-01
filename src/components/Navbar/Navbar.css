@@ -25,16 +25,19 @@
 
 .nav__item--active {
   background: #3b9f9d;
+  overflow: hidden;
 }
 
 .nav__item:hover {
-  background: #3b9f9d;
+  background: #76e9e7;
+  overflow: hidden;
 }
 .nav__item {
   display: table-cell;
   padding: 2px 25px 13px;
   position: relative;
 }
+
 @media only screen and (max-width: 40em) {
   .nav__item {
     padding: 2px 0px 13px;

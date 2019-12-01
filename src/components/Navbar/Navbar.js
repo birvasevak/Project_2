@@ -1,47 +1,63 @@
 import React, { Component } from "react";
 // import "../../App.css";
 import "./Navbar.css";
+import { NavLink } from "react-router-dom";
 
 class Navbar extends React.Component {
   render() {
     return (
       <nav className="header__nav" role="navigation">
         <ul className="nav__list">
-          <li className="nav__item">
-            <a href="L" className="nav__link">
-              {" "}
-              <div className="nav__icon--projects"></div>
-              <div className="nav__label">Projects</div>
-            </a>
-          </li>
-          <li className="nav__item ">
-            <a href="L" className="nav__link">
-              {" "}
-              <div className="nav__icon--spotlight"></div>
-              <div className="nav__label">Spotlight</div>
-            </a>
-          </li>
-          <li className="nav__item  nav__item--active">
-            <a href="L" className="nav__link">
-              {" "}
-              <div className="nav__icon--homepage"></div>
-              <div className="nav__label"></div>
-            </a>
-          </li>
-          <li className="nav__item ">
-            <a href="L" className="nav__link">
-              {" "}
-              <div className="nav__icon--friends"></div>
-              <div className="nav__label">Friends</div>
-            </a>
-          </li>
-          <li className="nav__item ">
-            <a href="L" className="nav__link">
-              {" "}
-              <div className="nav__icon--yearbook"></div>
-              <div className="nav__label">Yearbook</div>
-            </a>
-          </li>
+          <NavLink
+            activeClassName="nav__item--active"
+            className="nav__link nav__item"
+            to={"/Projects"}
+          >
+            {" "}
+            <div className="nav__icon--projects"></div>
+            <div className="nav__label">Projects</div>
+          </NavLink>
+
+          <NavLink
+            activeClassName="nav__item--active"
+            className="nav__link nav__item"
+            to={"/Spotlight"}
+          >
+            {" "}
+            <div className="nav__icon--spotlight"></div>
+            <div className="nav__label">Spotlight</div>
+          </NavLink>
+
+          <NavLink
+            exact
+            activeClassName="nav__item--active"
+            className="nav__link nav__item"
+            to={"/"}
+          >
+            {" "}
+            <div className="nav__icon--homepage"></div>
+            <div className="nav__label"></div>
+          </NavLink>
+
+          <NavLink
+            activeClassName="nav__item--active"
+            className="nav__link nav__item"
+            to={"/Friends"}
+          >
+            {" "}
+            <div className="nav__icon--friends"></div>
+            <div className="nav__label">Friends</div>
+          </NavLink>
+
+          <NavLink
+            activeClassName="nav__item--active"
+            className="nav__link nav__item"
+            to={"/Yearbook"}
+          >
+            {" "}
+            <div className="nav__icon--yearbook"></div>
+            <div className="nav__label">Yearbook</div>
+          </NavLink>
         </ul>
       </nav>
     );

@@ -63,7 +63,10 @@ class Toolbar extends Component {
           </div>
         </a>
 
-        <a className="child-select__item child-select__item--dropdown" href="/">
+        <a
+          className="child-select__item child-select__item--dropdown"
+          href="/"
+        >
           <div className="child-select__profile">
             <div
               className="child-select__avatar"

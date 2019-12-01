@@ -2,7 +2,7 @@
 import React, { Component } from "react";
 import "./Header.css";
 import Settings from "../Settings/Settings";
-// import Horizontal_logo from "../../image/Logo_Horizontal-No_Background_080719.png";import Mobile_logo from "../../image/Logo-mobile.png";
+// import Horizontal_logo from "../../image/Logo_Horizontal-No_Background_080719.png";
 import Mobile_logo from "../../image/Logo-mobile.png";
 import Desktop_logo from "../../image/desktop_logo.png";
 import Arrow_forward from "../../image/arrow-forward.png";
@@ -82,7 +82,7 @@ class Header extends React.Component {
                   </div>
                 </div>
               </div>
-              <div class="child-select-title-mobile">
+              <div className="child-select-title-mobile">
                 Who wants to play and learn?
               </div>
 
@@ -121,6 +121,7 @@ class Header extends React.Component {
             </div>
           </div>
         </div> 
+
           <div className="mobile-toolbar-menu__content">
             <div className="mobile-toolbar-menu__item">
               <a href="/">Home</a>
