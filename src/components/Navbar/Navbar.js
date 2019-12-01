@@ -7,7 +7,7 @@ class Navbar extends React.Component {
     return (
       <nav className="header__nav" role="navigation">
         <ul className="nav__list">
-          <li className="nav__item">
+          <li className="nav__item  nav__item--active">
             <a href="L" className="nav__link">
               {" "}
               <div className="nav__icon--projects"></div>
@@ -21,7 +21,7 @@ class Navbar extends React.Component {
               <div className="nav__label">Spotlight</div>
             </a>
           </li>
-          <li className="nav__item  nav__item--active">
+          <li className="nav__item ">
             <a href="L" className="nav__link">
               {" "}
               <div className="nav__icon--homepage"></div>

@@ -4,41 +4,49 @@ import "./components/Header/Header.css";
 import { Component } from "react";
 import Header from "./components/Header/Header";
 import Navbar from "./components/Navbar/Navbar";
-import SidebarProfile from "./components/SideBar-Profile/SideBarProfile";
 import Mobile_logo from "./image/Logo-mobile.png";
 import Desktop_logo from "./image/desktop_logo.png";
-
 //import UnicornHeart from "../src/site_media/Bottom Menu_Home_Unicorn Heart.png"
 //import Toolbar from './components/Toolbar/Toolbar';
 //import sideDrawer from './components/SideDrawer/SideDrawer';
-//import UnicornHeart from "../src/site_media/Bottom Menu_Home_Unicorn Heart.png"
 
-class App extends Component{
-  render(){
-    return(
-    <div className="App">
-      <div class="content-wrapper">
-        <Header />
-        <Navbar />
-        
-        <div class="container">
-          <div class="Tool-guide">
-            <div class="Help-Bar">Tool Guide here.</div>
-          </div>
-
-          <div class="main-view">
-            <div class="post">
-              <div class="user-icon"></div>
-              <div class="user-enter">
-                <h1>What's going on</h1></div>
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <div class="content-wrapper">
+          <Header />
+          <Navbar />
+          <div class="container">
+            <div class="Tool-guide">
+              <div class="child__avatar">Tool Guide here.</div>
+            </div>
+            <div class="content">
+              <div class="schedule">
+                <div class="page-title">
+                  <h1>This is Box</h1>
+                </div>
+                <div class="page-undertitle">This is post.</div>
+              </div>
+            </div>
+            <div class="sidebar-profile">
+              <div class="profile__wrapper">
+                <div class="profile__info">
+                  <a href="/children/update/352/">
+                    <div class="child__avatar">Picture here.</div>
+                  </a>
+                  <div class="profile__name">
+                    <a href="/children/update/352/">Name</a>
+                  </div>
+                  <div class="profile_Unicorn_Name">Unicorn Name</div>
+                  <div class="profile_blessingGroup">Blessing Group</div>
+                  <div class="profile_Color_rank">Color Horn Rank</div>
+                </div>
+              </div>
             </div>
           </div>
-
-
-          <SidebarProfile />
-          </div>
+        </div>
       </div>
-    </div>  
     );
   }
 }

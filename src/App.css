@@ -6,15 +6,12 @@
 
 @media only screen and (max-width: 40em) {
   .App {
-    height: 100%;
     width: 100%;
-    background: #e7088a;
   }
 }
 
-/*
-.App-header {
-  background-color: #282c34;
+/* .App-header {
+  background-color: white;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -22,7 +19,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}*/
+} */
 
 .content-wrapper {
   width: 100%;
@@ -31,16 +28,25 @@
   margin-top: 0;
   margin-bottom: 0;
   max-width: 62.5rem;
-  border: 12px solid #ffaacc;
+  /* border: 12px solid rgba(128, 57, 57, 0.5); */
+  border: 12px solid #fdcfe2;
   border-top: 0px;
   border-radius: 0px 0px 10px 10p;
-  background-color: #fff;
+  background-color: white;
 }
-@media only screen and (max-width: 40em){
+
+@media only screen and (max-width: 40em) {
   .content-wrapper {
     border: 0px;
   }
 }
+
+.header__toolbar {
+  float: right;
+  height: 100px;
+}
+
+/* move other class styles to respective files (later) */
 
 .container {
   width: 100%;
@@ -49,26 +55,16 @@
   margin-top: 0;
   margin-bottom: 0;
   max-width: 62.5rem;
-  background: #fff;
-  padding-top: 30px;
+  background: #ffaacc;
+  padding-top: 50px;
   padding-bottom: 30px;
 }
 
-@media only screen and (max-width: 40em){
-  .container {
-    padding-bottom: 0px;
-    padding-top: 0px;
-  }
-}
-
-.main-view {
+.content {
   position: relative;
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
   border-radius: 12px;
-  border-style: solid;
-  border-color: #716E70;
-  border-width: 1px;
   width: 45%;
   left: 25%;
   right: 30%;
@@ -76,17 +72,14 @@
   background: #fff;
 }
 
-.Tool-guide{
+.Tool-guide {
   position: relative;
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
   border-radius: 12px;
-  border-style: solid;
-  border-color: #716E70;
-  border-width: 1px;
   width: 22%;
   right: 1%;
-  float:right;
+  float: right;
   background-color: #fff;
 }
 
@@ -107,9 +100,57 @@
   margin-bottom: 15px;
 }
 
-.Help-Bar{
-  text-align: left;
+.sidebar-profile {
+  position: relative;
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+  width: 22%;
+  right: 75%;
+  left: 0%;
+  color: white;
+}
+
+.profile__wrapper {
+  background: #e7088a;
+  border-radius: 12px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.profile__info {
+  text-align: center;
+  margin-bottom: 25px;
+  padding-bottom: 25px;
+  background: url(./site_media/Images/dotted-line.png) repeat-x left bottom;
+}
+
+.profile__name {
+  font-size: 1.125rem;
+  line-height: 1.125rem;
+  font-weight: 300;
+  color: #0b4c5e;
+  margin-top: 15px;
+}
+.profile_Unicorn_Name {
+  font-size: 1.125rem;
+  line-height: 1.125rem;
+  font-weight: 300;
+  color: #0b4c5e;
+  margin-top: 5px;
+}
+
+.profile_blessingGroup {
+  font-size: 0.875rem;
+  line-height: 0.875rem;
+  font-weight: 300;
   color: black;
-  font-size: 1.75rem;
-  padding-left: 20px;
+  margin-top: 15px;
+}
+
+.profile_Color_rank {
+  font-size: 0.875rem;
+  line-height: 0.875rem;
+  font-weight: 300;
+  color: black;
+  margin-top: 5px;
 }
