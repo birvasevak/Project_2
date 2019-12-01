@@ -1,7 +1,7 @@
 .header__nav {
   clear: both;
   height: 85px;
-  background: #f958b6;
+  background: #63c5c3;
   text-align: center;
   z-index: 900;
   width: 100%;
@@ -24,18 +24,17 @@
 }
 
 .nav__item--active {
-  background: #e7088a;
+  background: #3b9f9d;
 }
 
 .nav__item:hover {
-  background: #692f51;
+  background: #3b9f9d;
 }
 .nav__item {
   display: table-cell;
   padding: 2px 25px 13px;
   position: relative;
 }
-
 @media only screen and (max-width: 40em) {
   .nav__item {
     padding: 2px 0px 13px;
