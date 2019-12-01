@@ -5,6 +5,11 @@
   background: #fff;
 }
 
+@media only screen and (max-width: 40em) {
+  .footer {
+    display: none;
+  }
+}
 .footer__gradient {
   background: url(../../site_media/Images/footer_gradient.png);
 

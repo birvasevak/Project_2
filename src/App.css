@@ -29,6 +29,7 @@
 @media only screen and (max-width: 40em) {
   .content-wrapper {
     border: 0px;
+    /* width: auto; */
   }
 }
 
@@ -49,5 +50,6 @@
   .container {
     padding-bottom: 0px;
     padding-top: 0px;
+    width: 100%;
   }
 }

@@ -334,6 +334,9 @@
   position: absolute;
   top: 23px;
   right: 20px;
+  /* background: url(../../site_media/Images/mobile_menu_icon.png); */
+  /* float: right; */
+  /* color: #fff; */
 }
 
 @media only screen and (min-width: 40.063em) {
