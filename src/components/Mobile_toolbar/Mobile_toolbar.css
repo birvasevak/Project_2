@@ -11,18 +11,10 @@
   z-index: 1000;
 }
 
-@media only screen and (min-width: 40.063em) {
-  .mobile-toolbar-menu {
-    display: none;
-  }
-}
-
-@media only screen and (max-width: 40em) {
-  .header__logo-wrapper {
-    background: #e7088a;
-    height: 70px;
-    overflow: hidden;
-  }
+.header__logo-wrapper {
+  background: #e7088a;
+  height: 70px;
+  overflow: hidden;
 }
 
 .header__logo {
@@ -48,13 +40,21 @@
 }
 
 .header-menu-mobile {
-  float: right;
-  margin-right: 20px;
+  float: left;
+  margin-left: 20px;
   margin-top: 15px;
   padding: 10px;
   position: absolute;
   top: 0px;
-  right: 0px;
+  left: 0px;
+}
+
+.header-title {
+  margin: 28px 0px 10px 20px;
+  color: white;
+  text-align: center;
+  font-size: 15px;
+  font-family: "TeX";
 }
 
 .mobile-toolbar-menu__item {
