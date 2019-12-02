@@ -16,7 +16,7 @@ class Login extends React.Component {
             Log in with your Facebook account and take advantage of your
             exclusive member benefits today.
           </p>
-          <div className="login-box__title">Loh In</div>
+          <div className="login-box__title">Log In</div>
           <div className="login-box__content">
             <div class="login-box__fb">
               <a

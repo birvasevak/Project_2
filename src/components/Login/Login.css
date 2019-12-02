@@ -42,6 +42,8 @@
 
 .login-box__logo {
   margin: 0 auto;
+  height: 78px;
+  width: 252px;
 }
 
 .login-box__title {
@@ -76,6 +78,29 @@
   color: #ffffff;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
   text-align: center;
+  text-decoration: none;
+}
+.login-box__fb img {
+  padding-top: 3px;
+  padding-right: 8px;
+}
+
+.form-submit,
+.add-row,
+.delete-row,
+.login__submit-button,
+.login-box__fb a,
+.activity__done-button,
+.one-off__submit-button,
+.one-off__fb a {
+  /* background: #5dc8ce; */
+  color: #fff;
+  padding: 8px 20px;
+  border: 1px solid #979797;
+  font-size: 1.125rem;
+  border-radius: 5px;
+  -webkit-appearance: none;
+  -webkit-border-radius: 5px;
 }
 
 .login__or-line {
@@ -109,6 +134,8 @@
 
 .login__line-right {
   float: right;
+  margin-right: 0px;
+  padding-left: 20px;
 }
 
 .login-form,
