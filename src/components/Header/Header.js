@@ -5,6 +5,7 @@ import Settings from "../Settings/Settings";
 // import Horizontal_logo from "../../image/Logo_Horizontal-No_Background_080719.png";
 import Mobile_logo from "../../image/Logo-mobile.png";
 import Desktop_logo from "../../image/desktop_logo.png";
+import NewLogo from "../../site_media/Logo_Horizontal_No_Tagline.png";
 import Arrow_forward from "../../image/arrow-forward.png";
 import Toolbar from "./Toolbar";
 import Mobile_menu_icon from "../../site_media/Images/mobile_menu_icon.png";
@@ -31,7 +32,7 @@ class Header extends React.Component {
           <div className="header__logo main">
             <a href="/">
               <img
-                src={Desktop_logo}
+                src={NewLogo}
                 className="header__logo-desktop"
                 alt="Unicorn Charity Club"
               />

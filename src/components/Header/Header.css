@@ -23,6 +23,7 @@
 .header__logo {
   float: left;
   margin: 28px 0px 0px 20px;
+
   /* background-color: white; */
 }
 
@@ -32,6 +33,12 @@
     width: 100%;
     text-align: center;
   }
+}
+
+.header__logo-desktop {
+  height: 78px;
+  width: 449px;
+  padding-bottom: 25px;
 }
 
 @media only screen and (max-width: 40em) {
