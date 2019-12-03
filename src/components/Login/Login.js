@@ -7,7 +7,7 @@ import Facebook_img from "../../site_media/facebook.png";
 class Login extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { value: { email: "", password: "" } };
+    this.state = {};
 
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -71,7 +71,7 @@ class Login extends React.Component {
               <a
                 id="login_button"
                 class="login-button"
-                href="/accounts/social-auth/login/facebook/"
+                href="https://www.facebook.com/"
               >
                 <img src={Facebook_img} alt="Facebook" class="hidden-phone" />
                 Log in with Facebook
@@ -100,11 +100,11 @@ class Login extends React.Component {
                   <input
                     maxlength="254"
                     name="username"
-                    type="email"
+                    type="text"
                     id="email"
                     placeholder="Email"
-                    value={this.state.value}
-                    onChange={this.handleChange}
+                    // value={this.state.value}
+                    // onChange={this.handleChange}
                   />
                   <ul class="errorlist">
                     <li></li>
@@ -115,9 +115,9 @@ class Login extends React.Component {
                     name="password"
                     type="password"
                     id="password"
-                    value={this.state.value}
+                    // value={this.state.value}
                     placeholder="Password"
-                    onChange={this.handleChange}
+                    // onChange={this.handleChange}
                   />
                   <ul class="errorlist">
                     <li></li>
