@@ -1,10 +1,59 @@
 import React, { Component } from "react";
 import "./Login.css";
+import Validator from "validator";
 import Logo from "../../site_media/Logo_Horizontal_No_Tagline.png";
 import Facebook_img from "../../site_media/facebook.png";
 
 class Login extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { value: { email: "", password: "" } };
+
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  handleChange(event) {
+    this.setState({ value: event.target.value });
+  }
+
+  handleSubmit(event) {
+    alert("A name was submitted: " + this.state.value);
+    event.preventDefault();
+  }
+
+  state = {
+    data: {
+      email: "",
+      passowrd: ""
+    },
+    loading: false,
+    errors: {}
+  };
+
+  onChange = e =>
+    this.setState({
+      data: { ...this.state.data, [e.target.name]: e.target.value }
+    });
+
+  onSubmit = () => {
+    const errors = this.validate(this.state.data);
+    this.setState({ errors });
+    if (Object.keys(errors).length === 0) {
+      this.props.submit(this.state.data);
+    }
+  };
+
+  validate = data => {
+    const errors = {};
+    if (!Validator.isEmail(data.email)) errors.email = "Invalid email";
+    if (!data.passowrd) errors.passowrd = "Can't be blank";
+    return errors;
+  };
+
   render() {
+    const { data, errors } = this.state;
+
     return (
       <section className="login">
         <div className="login-box">
@@ -31,11 +80,16 @@ class Login extends React.Component {
             <br></br>
             <div class="login__or-line">
               <div class="login__line-left"></div>
-              <span class="login__line-center">OR</span>
-              <div class="login__line-right"></div>
+              {/* <div class="login__line-center">OR</div> */}
+              {/* <div class="login__line-right"></div> */}
             </div>
             <div class="login-form">
-              <form class="login__form" name="form" method="POST">
+              <form
+                class="login__form"
+                name="form"
+                method="POST"
+                onSubmit={this.handleSubmit}
+              >
                 <input
                   type="hidden"
                   name="csrfmiddlewaretoken"
@@ -46,9 +100,11 @@ class Login extends React.Component {
                   <input
                     maxlength="254"
                     name="username"
-                    type="text"
-                    value=""
+                    type="email"
+                    id="email"
                     placeholder="Email"
+                    value={this.state.value}
+                    onChange={this.handleChange}
                   />
                   <ul class="errorlist">
                     <li></li>
@@ -58,8 +114,10 @@ class Login extends React.Component {
                   <input
                     name="password"
                     type="password"
-                    value=""
+                    id="password"
+                    value={this.state.value}
                     placeholder="Password"
+                    onChange={this.handleChange}
                   />
                   <ul class="errorlist">
                     <li></li>

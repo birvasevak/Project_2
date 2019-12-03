@@ -56,12 +56,14 @@
   padding-top: 15px;
   padding-bottom: 15px;
   font-size: 1.5625rem;
+  font-family: "Fredoka_One";
+  color: #0b4c5e;
 }
 
 .login-box__fb {
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
-  width: 100%;
+  width: 90%;
   float: left;
 }
 
@@ -71,6 +73,7 @@
   width: 100%;
   float: left;
   font-size: 1.125rem;
+  font-family: "TeX";
   background-color: #006dcc;
   background-image: linear-gradient(to bottom, #0088cc, #0044cc);
   background-repeat: repeat-x;
@@ -81,6 +84,7 @@
   text-decoration: none;
 }
 .login-box__fb img {
+  font-family: "TeX";
   padding-top: 3px;
   padding-right: 8px;
 }
@@ -106,7 +110,7 @@
 .login__or-line {
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
-  width: 100%;
+  width: 93%;
   float: left;
   padding-top: 15px;
 }
@@ -116,10 +120,12 @@
 .login__line-right {
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
-  width: 41.66667%;
+  /* width: 41.66667%; */
+  width: 100%;
   float: left;
   border-bottom: 1px solid #dadbe0;
   clear: both;
+  margin-bottom: 20px;
 }
 
 .login__line-left {
@@ -128,14 +134,19 @@
 
 .login__line-center {
   text-align: center;
-  margin-left: 15px;
+  margin-left: 5px;
+  margin-right: 5px;
   color: #aaaaaa;
 }
 
 .login__line-right {
   float: right;
+  margin-left: 20px;
   margin-right: 0px;
-  padding-left: 20px;
+  padding-left: 0px;
+  padding-top: -10px;
+  padding-right: 10px;
+  width: 40%;
 }
 
 .login-form,
@@ -154,6 +165,74 @@
 
 .form-item ul {
   list-style: none;
+}
+
+.form-item input[type="email"],
+.form-item input[type="text"],
+.form-item input[type="password"] {
+  margin-top: 5px;
+  padding: 12px;
+  display: block;
+  color: #808b96;
+  font-size: 1.0625rem;
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+  -webkit-appearance: none;
+  -webkit-border-radius: 5px;
+  border-radius: 6px;
+  border: 2px solid #8ddef4;
+  color: #999999;
+  font-size: 1.25rem;
+}
+
+.login__form input[type="email"],
+.login__form input[type="text"],
+.login__form input[type="password"] {
+  width: 100%;
+  margin-bottom: 0px;
+}
+
+.form-item input[type="email"],
+.form-item input[type="text"],
+.form-item input[type="password"] {
+  padding: 5px !important;
+  border: 2px solid #8ddef4 !important;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="week"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+input[type="color"],
+textarea {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0px;
+  background-color: white;
+  font-family: inherit;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #cccccc;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  color: rgba(0, 0, 0, 0.75);
+  display: block;
+  font-size: 0.875rem;
+  margin: 0 0 1rem 0;
+  padding: 0.5rem;
+  height: 2.3125rem;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  transition: box-shadow 0.45s, border-color 0.45s ease-in-out;
 }
 
 .errorlist {
@@ -211,4 +290,56 @@
   float: left;
   text-align: center;
   padding-bottom: 30px;
+}
+
+.login__field .submit-button,
+.login__field .activity-next-btn,
+.login__field .plan_compare_button,
+.login__field .change_popup_button,
+.login__field .sandbox-submit-button,
+.login__field .sandbox-play-now-button,
+.login__field .sandbox-read-more-button,
+.login__field .daily-bee-submit-button,
+.login__field .daily-bee-read-more-button,
+.login__field .submit-button-right {
+  width: 100%;
+}
+
+.submit-button,
+.activity-next-btn,
+.plan_compare_button,
+.change_popup_button,
+.sandbox-submit-button,
+.sandbox-play-now-button,
+.sandbox-read-more-button,
+.daily-bee-submit-button,
+.daily-bee-read-more-button,
+.submit-button-right {
+  border-style: solid;
+  border-width: 0px;
+  cursor: pointer;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-weight: normal;
+  line-height: normal;
+  margin: 0 0 1.25rem;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  display: inline-block;
+  padding-top: 1rem;
+  padding-right: 2rem;
+  padding-bottom: 1.0625rem;
+  padding-left: 2rem;
+  font-size: 1rem;
+  background-color: #5dc8ce;
+  border-color: #38b1b8;
+  color: #ffffff;
+  border-radius: 8px;
+  transition: background-color 300ms ease-out;
+  background-color: #5dc8ce;
+  padding: 10px 30px;
+  border-radius: 6px !important;
+  width: 180px;
 }
