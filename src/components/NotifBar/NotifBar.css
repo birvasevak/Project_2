@@ -1,0 +1,65 @@
+.Tool-guide{
+    position: relative;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    border-radius: 12px;
+    border-style: solid;
+    border-color: #716E70;
+    border-width: 1px;
+    width: 22%;
+    right: 1%;
+    float:right;
+    background-color: #fff;
+}
+
+.content_holder{
+    background: #fff;
+    border-radius: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.Calender{
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: 10px auto;
+    padding-top: 20px;
+    background-image: url(../../site_media/Images/Calendar.png);
+}
+.Notification{
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: 10px auto;
+    padding-top: 20px;
+    background-image: url(../../site_media/Images/Settings_Notifications.png);
+}
+
+.Messages{
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: 10px auto;
+    padding-top: 10px;
+    background-image: url(../../site_media/Images/Setting_Messages.png);
+    background-color: #3b9f9d;
+}
+
+.Text{
+    text-align: center;
+    font-size: 1.125rem;
+    line-height: 1.125rem;
+    font-weight: 300;
+    color: #3b9f9d;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+
