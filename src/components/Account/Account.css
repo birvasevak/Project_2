@@ -1,7 +1,9 @@
 .header__wrapper {
   background: #e7088a;
+  top: 0;
   height: 70px;
   overflow: hidden;
+  width: 100%;
 }
 
 .account-menu__item {
@@ -11,4 +13,15 @@
   border-bottom: 1px solid rgb(126, 123, 123);
   border-bottom-width: 100%;
   padding: 10px 10px 30px 10px;
+}
+
+.account-menu {
+  display: none;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 75%;
+  background: #ffffff;
+  z-index: 1000;
 }

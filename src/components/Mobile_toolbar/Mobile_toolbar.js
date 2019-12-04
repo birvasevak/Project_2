@@ -11,6 +11,13 @@ import Terms_and_Conditions from "../Terms_and_Conditions/Terms_and_Conditions";
 import Security_and_Privacy from "../Security_and_Privacy/Security_and_Privacy";
 
 class Mobile_toolbar extends Component {
+  super() {
+    this.state = { isMenuOpen: true };
+  }
+
+  closeMenu() {
+    this.setState = { isMenuOpen: false };
+  }
   render() {
     return (
       <Router>
@@ -29,7 +36,9 @@ class Mobile_toolbar extends Component {
           <div className="mobile-toolbar-menu__content">
             <div className="mobile-toolbar-menu__item">
               {/* <a href="/Menu/Account">My Account</a> */}
-              <NavLink to={"/Menu/Account"}>My Account</NavLink>
+              <NavLink to={"/Menu/Account"} onClick={() => this.closeMenu()}>
+                My Account
+              </NavLink>
             </div>
 
             <div className="mobile-toolbar-menu__item">
@@ -41,7 +50,7 @@ class Mobile_toolbar extends Component {
               <NavLink to={"/Payment"}>
                 Payment
                 {/* <a href="/">Payments</a> */}
-                <a href="/Payments">
+                <a href="/Menu/Payments">
                   <img
                     src={Arrow_forward}
                     className="return-button"
@@ -51,7 +60,7 @@ class Mobile_toolbar extends Component {
               </NavLink>
             </div>
             <div className="mobile-toolbar-menu__item">
-              <NavLink to={"/Terms_and_Conditions"}>
+              <NavLink to={"/Menu/Terms_and_Conditions"}>
                 Terms and Conditions
                 <a href="/Terms and Conditions">
                   <img
@@ -63,7 +72,7 @@ class Mobile_toolbar extends Component {
               </NavLink>
             </div>
             <div className="mobile-toolbar-menu__item">
-              <NavLink to={"/Security_and_Privacy"}>
+              <NavLink to={"/Menu/Security_and_Privacy"}>
                 Security and Privacy
                 <a href="/Security and Privacy">
                   <img
@@ -87,21 +96,22 @@ class Mobile_toolbar extends Component {
               </a>
             </div>
           </div>
-          <Switch>
-            <Route path="/Menu/Account" exact component={Account} />
-            <Route path="/Menu/MyChildren" exact component={MyChildren} />
-            <Route path="/Payment" exact component={Payment} />
-            <Route
-              path="/Terms_and_Conditions"
-              exact
-              component={Terms_and_Conditions}
-            />
-            <Route
-              path="/Security_and_Privacy"
-              exact
-              component={Security_and_Privacy}
-            />
-          </Switch>
+          {/* <Switch> */}
+          <Route path="/Menu/Account" exact component={Account} />
+          <Route path="/Menu/MyChildren" exact component={MyChildren} />
+          <Route path="/Payment" exact component={Payment} />
+          <Route
+            path="/Terms_and_Conditions"
+            exact
+            component={Terms_and_Conditions}
+          />
+          <Route
+            path="/Security_and_Privacy"
+            exact
+            component={Security_and_Privacy}
+          />
+          {/* </Switch> */}
+          <main>{this.props.children}</main>
         </div>
       </Router>
     );
