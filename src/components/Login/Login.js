@@ -1,58 +1,22 @@
 import React, { Component } from "react";
 import "./Login.css";
-import Validator from "validator";
+import { NavLink } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import Homepage from "../Homepage/Homepage";
 import Logo from "../../site_media/Logo_Horizontal_No_Tagline.png";
 import Facebook_img from "../../site_media/facebook.png";
 
 class Login extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
+  // constructor(props) {
+  //   super(props);
+  //   this.state = {};
 
-    this.handleChange = this.handleChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
-  }
-
-  handleChange(event) {
-    this.setState({ value: event.target.value });
-  }
-
-  handleSubmit(event) {
-    alert("A name was submitted: " + this.state.value);
-    event.preventDefault();
-  }
-
-  state = {
-    data: {
-      email: "",
-      passowrd: ""
-    },
-    loading: false,
-    errors: {}
-  };
-
-  onChange = e =>
-    this.setState({
-      data: { ...this.state.data, [e.target.name]: e.target.value }
-    });
-
-  onSubmit = () => {
-    const errors = this.validate(this.state.data);
-    this.setState({ errors });
-    if (Object.keys(errors).length === 0) {
-      this.props.submit(this.state.data);
-    }
-  };
-
-  validate = data => {
-    const errors = {};
-    if (!Validator.isEmail(data.email)) errors.email = "Invalid email";
-    if (!data.passowrd) errors.passowrd = "Can't be blank";
-    return errors;
-  };
+  //   // this.handleChange = this.handleChange.bind(this);
+  //   // this.handleSubmit = this.handleSubmit.bind(this);
+  // }
 
   render() {
-    const { data, errors } = this.state;
+    // const { data, errors } = this.state;
 
     return (
       <section className="login">
@@ -83,7 +47,8 @@ class Login extends React.Component {
               {/* <div class="login__line-center">OR</div> */}
               {/* <div class="login__line-right"></div> */}
             </div>
-            <div class="login-form">
+            <LoginForm />
+            {/* <div class="login-form">
               <form
                 class="login__form"
                 name="form"
@@ -130,7 +95,7 @@ class Login extends React.Component {
                   </button>
                 </div>
               </form>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
@@ -139,3 +104,123 @@ class Login extends React.Component {
 }
 
 export default Login;
+
+class LoginForm extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { email: "", password: "", errors: [] };
+  }
+
+  showValidationErr(elm, msg) {
+    this.setState(prevState => ({
+      errors: [...prevState.errors, { elm, msg }]
+    }));
+  }
+
+  clearValidationErr(elm) {
+    this.setState(prevState => {
+      let newArr = [];
+      for (let err of prevState.errors) {
+        if (elm != err.elm) {
+          newArr.push(err);
+        }
+      }
+      return { errors: newArr };
+    });
+  }
+
+  onEmailChange(e) {
+    this.setState({ email: e.target.value });
+    this.clearValidationErr("email");
+  }
+
+  onPasswordChange(e) {
+    this.setState({ password: e.target.value });
+    this.clearValidationErr("email");
+  }
+
+  submitLogin(e) {
+    if (this.state.email == "") {
+      this.showValidationErr("Email", "Email cannot be empty");
+    } else if (this.state.password == "") {
+      this.showValidationErr("Password", "Password cannot be empty");
+    }
+  }
+
+  render() {
+    let emailErr = null,
+      passwordErr = null;
+    for (let err of this.state.errors) {
+      if (err.elm == "email") {
+        emailErr = err.msg;
+      }
+      if (err.elm == "password") {
+        passwordErr = err.msg;
+      }
+    }
+
+    return (
+      <Router>
+        <div class="login-form">
+          <form
+            class="login__form"
+            name="form"
+            method="POST"
+            onSubmit={this.handleSubmit}
+          >
+            <input
+              type="hidden"
+              name="csrfmiddlewaretoken"
+              value="Aegb7wMJ3xjt52OHuAdxdkKr6P5S5BFt"
+            />
+
+            <div class="form-item">
+              <input
+                // maxlength="254"
+                name="username"
+                type="text"
+                id="email"
+                placeholder="Email"
+                // value={this.state.value}
+                onChange={this.onEmailChange.bind(this)}
+              />
+              <small className="danger-error">{emailErr ? emailErr : ""}</small>
+              <ul class="errorlist">
+                <li></li>
+              </ul>
+            </div>
+            <div class="form-item">
+              <input
+                name="password"
+                type="password"
+                id="password"
+                placeholder="Password"
+                onChange={this.onPasswordChange.bind(this)}
+              />
+              <small className="danger-error">
+                {passwordErr ? passwordErr : ""}
+              </small>
+              <ul class="errorlist">
+                <li></li>
+              </ul>
+            </div>
+            <NavLink to={"/Homepage"}>
+              <div class="login__field">
+                <button
+                  type="button"
+                  className="submit-button"
+                  onClick={this.submitLogin.bind(this)}
+                >
+                  Log In
+                </button>
+              </div>
+            </NavLink>
+          </form>
+          <Route path="/Homepage" exact component={Homepage}>
+            <Homepage />
+          </Route>
+        </div>
+      </Router>
+    );
+  }
+}

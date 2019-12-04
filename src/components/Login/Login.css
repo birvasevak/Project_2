@@ -343,3 +343,7 @@ textarea {
   border-radius: 6px !important;
   width: 180px;
 }
+.danger-error {
+  color: #e74c3c;
+  font-size: 16px;
+}

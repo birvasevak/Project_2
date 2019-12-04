@@ -103,14 +103,12 @@ class Header extends React.Component {
             </div>
           </NavLink>
         </header>
-        {/* <Switch> */}
         <Route path="/Homepage" exact component={Homepage}>
-          <Homepage />
+          {/* <Homepage /> */}
         </Route>
         <Route path="/Mobile_toolbar" exact component={Mobile_toolbar}>
-          <Mobile_toolbar />
+          {/* <Mobile_toolbar /> */}
         </Route>
-        {/* </Switch> */}
       </Router>
     );
   }
