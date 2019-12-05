@@ -47,7 +47,7 @@ class Mobile_toolbar extends Component {
             </div>
 
             <div className="mobile-toolbar-menu__item">
-              <NavLink to={"/Payment"}>
+              <NavLink to={"/Menu/Payment"}>
                 Payment
                 {/* <a href="/">Payments</a> */}
                 <a href="/Menu/Payments">
@@ -62,7 +62,7 @@ class Mobile_toolbar extends Component {
             <div className="mobile-toolbar-menu__item">
               <NavLink to={"/Menu/Terms_and_Conditions"}>
                 Terms and Conditions
-                <a href="/Terms and Conditions">
+                <a href="/Menu/Terms and Conditions">
                   <img
                     src={Arrow_forward}
                     className="return-button"
@@ -74,7 +74,7 @@ class Mobile_toolbar extends Component {
             <div className="mobile-toolbar-menu__item">
               <NavLink to={"/Menu/Security_and_Privacy"}>
                 Security and Privacy
-                <a href="/Security and Privacy">
+                <a href="/Menu/Security and Privacy">
                   <img
                     src={Arrow_forward}
                     className="return-button"
@@ -99,14 +99,14 @@ class Mobile_toolbar extends Component {
           {/* <Switch> */}
           <Route path="/Menu/Account" exact component={Account} />
           <Route path="/Menu/MyChildren" exact component={MyChildren} />
-          <Route path="/Payment" exact component={Payment} />
+          <Route path="/Menu/Payment" exact component={Payment} />
           <Route
-            path="/Terms_and_Conditions"
+            path="/Menu/Terms_and_Conditions"
             exact
             component={Terms_and_Conditions}
           />
           <Route
-            path="/Security_and_Privacy"
+            path="/Menu/Security_and_Privacy"
             exact
             component={Security_and_Privacy}
           />

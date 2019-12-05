@@ -31,9 +31,10 @@ class MyChildren extends React.Component {
             <div className="header-title">My Children</div>
           </div>
           <div className="account-menu__content">
-            <div className="account-menu__item">
+            {/* <div className="account-menu__item">
               <a href="/"> Address</a>
-            </div>
+            </div> */}
+            <h1>My Children</h1>
           </div>
           {/* </div> */}
           <Route path="/Menu" exact component={Mobile_toolbar} />

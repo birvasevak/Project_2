@@ -28,10 +28,10 @@ class Terms_and_Conditions extends React.Component {
             <div className="header-title">Terms and Conditions</div>
           </div>
           <div className="account-menu__content">
-            <div className="account-menu__item">
+            {/* <div className="account-menu__item">
               <a href="/"> Address</a>
-            </div>
-            {/* <h1>Terms and Conditions</h1> */}
+            </div> */}
+            <h1>Terms and Conditions</h1>
           </div>
           {/* </div> */}
           <Route path="/Menu" exact component={Mobile_toolbar} />
