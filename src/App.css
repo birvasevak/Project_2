@@ -46,6 +46,7 @@
   padding-top: 30px;
   padding-bottom: 30px;
 }
+/*Mobile*/
 @media only screen and (max-width: 40em) {
   .container {
     padding-bottom: 0px;

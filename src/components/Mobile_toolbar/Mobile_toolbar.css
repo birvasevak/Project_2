@@ -9,6 +9,28 @@
   height: 75%;
   background: #ffffff;
   z-index: 1000;
+  overflow: hidden;
+}
+
+/* @media only screen and (min-width: 40.063em) {
+  .mobile-toolbar-menu {
+    overflow: hidden;
+    position: absolute;
+    width: 1000px;
+    margin-left: ;
+    float: right;
+   
+  }
+} */
+
+.wrapper {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: 62.5rem;
+  min-height: 1000px;
 }
 
 .header__logo-wrapper {
