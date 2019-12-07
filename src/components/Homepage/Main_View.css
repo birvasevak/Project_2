@@ -1,0 +1,127 @@
+.main-view {
+  position: relative;
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+  border-radius: 12px;
+  border-style: solid;
+  border-color: #716e70;
+  border-width: 1px;
+  width: 45%;
+  left: 25%;
+  right: 30%;
+  float: left;
+  background: #fff;
+}
+
+.post {
+  position: relative;
+}
+
+.user-icon {
+  float: left;
+  margin-top: 15px;
+  min-height: 1px;
+}
+.User {
+  float: left;
+  margin: 12px 0 0 12px;
+}
+.user-image {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-image: url(../../site_media/Images/Ap7Swug2_400x400.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.user-enter {
+  position: relative;
+  overflow: hidden;
+}
+
+.enter-default {
+  max-height: 71px;
+  min-height: initial;
+  padding: 23px 12px 14px 12px;
+  font-size: 20px;
+  height: 100%;
+  line-height: 20px;
+  resize: none;
+  width: 90%;
+  border-color: #fff;
+}
+
+.Line {
+  border-top: 1px solid #e9ebee;
+  margin: 0 12px;
+  padding: 8px 0;
+}
+.Block {
+  position: relative;
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+  width: 25%;
+
+  right: auto;
+  float: left;
+  margin-bottom: 5px;
+}
+
+.Photos-text {
+  color: #4b4f56;
+  display: inline-block;
+}
+
+.Projects-text {
+  color: #4b4f56;
+  display: inline-block;
+}
+.Blocks {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 5px;
+  padding-left: 20px;
+}
+
+/* Style buttons */
+.btn {
+  /* White text */
+
+  font-size: 15px; /* Set a font size */
+  cursor: pointer; /* Mouse pointer on hover */
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: rgb(198, 206, 231);
+}
+.btn span.photo-icon {
+  background: url(../../site_media/Images/Tags_Photos.png) no-repeat;
+  float: left;
+  width: 30px;
+  height: 40px;
+  background-size: contain;
+}
+.btn span.projects-icon {
+  background: url(../../site_media/Images/Tags_Projects.png) no-repeat;
+  float: left;
+  width: 30px;
+  height: 40px;
+  background-size: contain;
+}
+.btn span.friends-icon {
+  background: url(../../site_media/Images/Tags_Friends.png) no-repeat;
+  float: left;
+  width: 30px;
+  height: 40px;
+  background-size: contain;
+}
+
+a:link {
+  text-decoration: none;
+  color: rgb(28, 155, 113);
+}
