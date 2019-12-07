@@ -36,7 +36,7 @@ class Navbar extends React.Component {
           >
             {" "}
             <div className="nav__icon--homepage"></div>
-            <div className="nav__label"></div>
+            <div className="nav__label"> </div>
           </NavLink>
 
           <NavLink

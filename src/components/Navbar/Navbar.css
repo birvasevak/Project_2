@@ -1,6 +1,6 @@
 .header__nav {
   clear: both;
-  height: 85px;
+  height: 99px;
   background: #63c5c3;
   text-align: center;
   z-index: 900;
@@ -25,16 +25,25 @@
 
 .nav__item--active {
   background: #3b9f9d;
-  overflow: hidden;
 }
+/*.nav__item--active::after {
+  background-image: url(../../site_media/Images/menu_active_arrow.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  content: "";
+  position: absolute;
+  margin-top: 10px;
+  left: 46%;
+  height: 25.5px;
+  width: 20px;
+}*/
 
 .nav__item:hover {
-  background: #76e9e7;
-  overflow: hidden;
+  background: #2bb9b7;
 }
 .nav__item {
   display: table-cell;
-  padding: 2px 25px 13px;
+  padding: 20px 25px 13px;
   position: relative;
 }
 
@@ -47,14 +56,14 @@
 .nav__link {
   color: #fff;
   font-size: 0.9375rem;
-  line-height: 0.625rem;
+  line-height: 1.5rem;
   text-align: center;
   text-decoration: none;
 }
 .nav__icon--projects {
   margin: 0px auto;
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
   background: url(../../site_media/Images/Menu_Projects.png);
   background-repeat: no-repeat;
   background-size: contain;
@@ -67,27 +76,28 @@
   background: url(../../site_media/Images/Menu_UC.png);
   background-repeat: no-repeat;
   background-size: contain;
+  overflow: hidden;
 }
 .nav__icon--spotlight {
   margin: 0px auto;
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
   background-image: url(../../site_media/Images/Menu_Spotlight.png);
   background-repeat: no-repeat;
   background-size: contain;
 }
 .nav__icon--friends {
   margin: 0px auto;
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
   background: url(../../site_media/Images/Menu_Friends.png);
   background-repeat: no-repeat;
   background-size: contain;
 }
 .nav__icon--yearbook {
   margin: 0px auto;
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
   background: url(../../site_media/Images/Menu_Photos.png);
   background-repeat: no-repeat;
   background-size: contain;
