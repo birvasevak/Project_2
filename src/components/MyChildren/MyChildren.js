@@ -40,15 +40,18 @@ class MyChildren extends React.Component {
                 <a href="/"> Child's Name</a>
               </div>
             </NavLink>
-            <div className="menu__item">
-              <img src={Add_child} alt="add achild" />
-              <a href="/"> Add Child</a>
-            </div>
+            <NavLink to={"/addChild"}>
+              <div className="menu__item">
+                <img src={Add_child} alt="add achild" />
+                <a href="/"> Add Child</a>
+              </div>
+            </NavLink>
           </div>
           {/* </div> */}
           <Route path="/Child_name1" exact component={ChildName} />
           <Route path="/Child_name2" exact component={ChildName} />
           <Route path="/Menu" exact component={Mobile_toolbar} />
+          <Route path="/addChild" exact component={ChildName} />
         </div>
       </Router>
     );

@@ -31,6 +31,7 @@ class Account extends React.Component {
               </div>
             </div>
             <div className="header-title">My Account</div>
+            {/* <div className="header-link">Save</div> */}
           </div>
           <div className="menu__content">
             <div className="menu__item_title">

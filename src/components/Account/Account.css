@@ -79,10 +79,21 @@
   height: 88%;
   background: #ffffff;
   z-index: 1000;
+  overflow-y: scroll;
 }
 
 .header-title {
   margin: 28px 0px 10px 20px;
+  /* margin: auto; */
+  color: white;
+  text-align: center;
+  font-size: 15px;
+  font-family: "TeX";
+}
+
+.header-link {
+  float: right;
+  /* margin: 28px 0px 10px 20px; */
   color: white;
   text-align: center;
   font-size: 15px;
