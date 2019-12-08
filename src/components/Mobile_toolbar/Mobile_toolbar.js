@@ -9,6 +9,7 @@ import MyChildren from "../MyChildren/MyChildren";
 import Payment from "../Payment/Payment";
 import Terms_and_Conditions from "../Terms_and_Conditions/Terms_and_Conditions";
 import Security_and_Privacy from "../Security_and_Privacy/Security_and_Privacy";
+import Navbar from "../Navbar/Navbar";
 
 class Mobile_toolbar extends Component {
   super() {
@@ -97,6 +98,7 @@ class Mobile_toolbar extends Component {
                 </a>
               </div>
             </div>
+            <Navbar />
             {/* <Switch> */}
             <Route path="/Menu/Account" exact component={Account} />
             <Route path="/Menu/MyChildren" exact component={MyChildren} />

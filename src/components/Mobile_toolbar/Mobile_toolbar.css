@@ -12,14 +12,20 @@
   height: auto;
 }
 
-/* @media only screen and (min-width: 40.063em) {
+@media only screen and (min-width: 40.063em) {
   .mobile-toolbar-menu {
+    display: none;
+  }
+}
+
+/* @media only screen and (max-width: 40em) {
+  .mobile-toolbar-menu {
+    display: none;
+    /* align-content: center;
+    float: center;
     overflow: hidden;
     position: absolute;
-    width: 1000px;
-    margin-left: ;
-    float: right;
-   
+    width: 1000px; 
   }
 } */
 
