@@ -1,6 +1,6 @@
 .header__nav {
   clear: both;
-  height: 99px;
+  /* height: 99px; */
   background: #63c5c3;
   text-align: center;
   z-index: 900;

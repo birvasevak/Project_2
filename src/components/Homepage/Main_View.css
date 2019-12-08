@@ -30,7 +30,8 @@
   height: 40px;
   width: 40px;
   border-radius: 50%;
-  background-image: url(../../site_media/Images/Ap7Swug2_400x400.jpg);
+  background-color: #ffaacc;
+  /* background-image: url(../../site_media/Images/Ap7Swug2_400x400.jpg); */
   background-size: cover;
   background-position: center center;
 }
