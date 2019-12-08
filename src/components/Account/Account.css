@@ -83,8 +83,6 @@
 }
 
 .header-title {
-  margin: 28px 0px 10px 20px;
-  /* margin: auto; */
   color: white;
   text-align: center;
   font-size: 15px;
@@ -93,9 +91,9 @@
 
 .header-link {
   float: right;
-  /* margin: 28px 0px 10px 20px; */
+  margin-right: 20px;
   color: white;
-  text-align: center;
+  text-align: right;
   font-size: 15px;
   font-family: "TeX";
 }

@@ -39,7 +39,10 @@ class ChildName extends React.Component {
                 </div>
               </div>
 
-              <div className="header-title">Child's Name</div>
+              <div className="header-title">
+                Child's Name
+                <div className="header-link">Save</div>
+              </div>
             </div>
             {/* <div className="page"> */}
             <div className="avatar">
