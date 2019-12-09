@@ -161,9 +161,9 @@ class LoginForm extends React.Component {
 
     return (
       <Router>
-        <div class="login-form">
+        <div className="login-form">
           <form
-            class="login__form"
+            className="login__form"
             name="form"
             method="POST"
             onSubmit={this.handleSubmit}

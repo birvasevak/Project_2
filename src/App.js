@@ -17,6 +17,7 @@ import Desktop_logo from "./image/desktop_logo.png";
 import Mobile_toolbar from "./components/Mobile_toolbar/Mobile_toolbar";
 import Login from "./components/Login/Login";
 import ChildForm from "./components/MyChildren/ChildForm";
+import Register from "./components/Register/Register";
 
 //import UnicornHeart from "../src/site_media/Bottom Menu_Home_Unicorn Heart.png"
 //import Toolbar from './components/Toolbar/Toolbar';
@@ -38,7 +39,9 @@ class App extends Component {
       <Router>
         <div className="App">
           <div className="content-wrapper">
-            <Header />
+            <Register />
+            {/* <Header /> */}
+            {/* <Header />
             <Navbar />
 
             <div className="container">
@@ -50,7 +53,7 @@ class App extends Component {
                 <Route path="/Yearbook" component={Yearbook} />
               </Switch>
               {this.state.showSideBar ? <Sidebar /> : null}
-            </div>
+            </div> */}
           </div>
           <Footer />
         </div>

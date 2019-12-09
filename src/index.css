@@ -45,3 +45,8 @@ body {
   font-family: "Fredoka_One";
   color: #4d4d4d;
 }
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}

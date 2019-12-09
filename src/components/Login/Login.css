@@ -173,7 +173,8 @@
   margin-top: 5px;
   padding: 12px;
   display: block;
-  color: #808b96;
+  /* color: #808b96; */
+  color: #000000;
   font-size: 1.0625rem;
   border: 1px solid #e5e5e5;
   border-radius: 5px;
@@ -181,8 +182,13 @@
   -webkit-border-radius: 5px;
   border-radius: 6px;
   border: 2px solid #8ddef4;
-  color: #999999;
-  font-size: 1.25rem;
+
+  font-size: 1.1rem;
+}
+
+::-webkit-input-placeholder {
+  font-size: 0.8rem;
+  color: #808080;
 }
 
 .login__form input[type="email"],
@@ -199,42 +205,6 @@
   border: 2px solid #8ddef4 !important;
 }
 
-/* input[type="text"],
-input[type="password"],
-input[type="date"],
-input[type="datetime"],
-input[type="datetime-local"],
-input[type="month"],
-input[type="week"],
-input[type="email"],
-input[type="number"],
-input[type="search"],
-input[type="tel"],
-input[type="time"],
-input[type="url"],
-input[type="color"],
-textarea {
-  -webkit-appearance: none;
-  -webkit-border-radius: 0px;
-  background-color: white;
-  font-family: inherit;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #cccccc;
-  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
-  color: rgba(0, 0, 0, 0.75);
-  display: block;
-  font-size: 0.875rem;
-  margin: 0 0 1rem 0;
-  padding: 0.5rem;
-  height: 2.3125rem;
-  width: 100%;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  transition: box-shadow 0.45s, border-color 0.45s ease-in-out;
-} */
-
 .errorlist {
   overflow: hidden;
   clear: both;
@@ -247,14 +217,6 @@ textarea {
 
 @media only screen and (max-width: 40em) {
   .submit-button,
-  .activity-next-btn,
-  .plan_compare_button,
-  .change_popup_button,
-  .sandbox-submit-button,
-  .sandbox-play-now-button,
-  .sandbox-read-more-button,
-  .daily-bee-submit-button,
-  .daily-bee-read-more-button,
   .submit-button-right {
     border-style: solid;
     border-width: 0px;
@@ -283,6 +245,7 @@ textarea {
 }
 
 .login-form,
+.register-form,
 .pre-wrapper__label--center {
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
@@ -306,14 +269,6 @@ textarea {
 }
 
 .submit-button,
-.activity-next-btn,
-.plan_compare_button,
-.change_popup_button,
-.sandbox-submit-button,
-.sandbox-play-now-button,
-.sandbox-read-more-button,
-.daily-bee-submit-button,
-.daily-bee-read-more-button,
 .submit-button-right {
   border-style: solid;
   border-width: 0px;
@@ -343,7 +298,3 @@ textarea {
   border-radius: 6px !important;
   width: 180px;
 }
-/* .danger-error {
-  color: #e74c3c;
-  font-size: 16px;
-} */
