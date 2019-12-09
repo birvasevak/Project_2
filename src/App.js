@@ -39,9 +39,8 @@ class App extends Component {
       <Router>
         <div className="App">
           <div className="content-wrapper">
-            <Register />
-            {/* <Header /> */}
-            {/* <Header />
+            {/* <Register /> */}
+            <Header />
             <Navbar />
 
             <div className="container">
@@ -53,7 +52,7 @@ class App extends Component {
                 <Route path="/Yearbook" component={Yearbook} />
               </Switch>
               {this.state.showSideBar ? <Sidebar /> : null}
-            </div> */}
+            </div>
           </div>
           <Footer />
         </div>
