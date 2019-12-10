@@ -5,43 +5,50 @@ import "../Login/Login.css";
 import Mobile_logo from "../../image/Logo-mobile.png";
 import DesktopLogo from "../../site_media/Logo_Horizontal_No_Tagline.png";
 import { Checkbox, FormControlLabel, Button } from "@material-ui/core";
+import { NavLink } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Login from "../Login/Login";
+// import axios from "axios";
 
 class Register extends React.Component {
   render() {
     return (
-      <div>
-        <header className="header">
-          {/* <img src={Mobile_logo} alt="image" className="style" /> */}
-          <div className="header__logo main">
-            <a href="/">
-              <img
-                src={DesktopLogo}
-                className="header__logo-desktop"
-                alt="Unicorn Charity Club"
-              />
-              <img
-                src={Mobile_logo}
-                className="header__logo-mobile"
-                alt="Unicorn Charity Club"
-                style={{ width: "250px" }}
-              />
-            </a>
+      <Router>
+        <div>
+          <header className="header">
+            <div className="header__logo main">
+              <a href="/">
+                <img
+                  src={DesktopLogo}
+                  className="header__logo-desktop"
+                  alt="Unicorn Charity Club"
+                />
+                <img
+                  src={Mobile_logo}
+                  className="header__logo-mobile"
+                  alt="Unicorn Charity Club"
+                  style={{ width: "250px" }}
+                />
+              </a>
+            </div>
+          </header>
+          <div class="header__toolbar not-logged-main">
+            <NavLink to="/Login">
+              <div class="header__signin-buttons">
+                <button class="header__login_button" href="/accounts/log-in/">
+                  Log in
+                </button>
+              </div>
+            </NavLink>
           </div>
-        </header>
-        <div class="header__toolbar not-logged-main">
-          <div class="header__signin-buttons">
-            <button class="header__login_button" href="/accounts/log-in/">
-              Log in
-            </button>
-            {/* <button>Log In</button> */}
-          </div>
-        </div>
 
-        <div class="title">
-          <span>Let's get you started with Unicron Charity Club!!</span>
+          <div class="title">
+            <span>Let's get you started with Unicron Charity Club!!</span>
+          </div>
+          <RegisterForm />
         </div>
-        <RegisterForm />
-      </div>
+        <Route path="/Login" exact component={Login} />
+      </Router>
     );
   }
 }
@@ -63,7 +70,7 @@ class RegisterForm extends React.Component {
     this.setState(prevState => {
       let newArr = [];
       for (let err of prevState.errors) {
-        if (elm != err.elm) {
+        if (elm !== err.elm) {
           newArr.push(err);
         }
       }
@@ -85,37 +92,29 @@ class RegisterForm extends React.Component {
     this.clearValidationErr("password");
   }
 
-  submitLogin(e) {
-    if (this.state.username == "") {
+  submitRegister(e) {
+    if (this.state.username === "") {
       this.showValidationErr("Username", "Username cannot be empty");
     }
-    if (this.state.email == "") {
+    if (this.state.email === "") {
       this.showValidationErr("Email", "Email cannot be empty");
-    } else if (this.state.password == "") {
+    } else if (this.state.password === "") {
       this.showValidationErr("Password", "Password cannot be empty");
     }
   }
-
-  toggleCheckbox = label => {
-    if (this.selectedCheckboxes.has(label)) {
-      this.selectedCheckboxes.delete(label);
-    } else {
-      this.selectedCheckboxes.add(label);
-    }
-  };
 
   render() {
     let usernameErr = null,
       emailErr = null,
       passwordErr = null;
     for (let err of this.state.errors) {
-      if (err.elm == "username") {
+      if (err.elm === "username") {
         usernameErr = err.msg;
       }
-      if (err.elm == "email") {
+      if (err.elm === "email") {
         emailErr = err.msg;
       }
-      if (err.elm == "password") {
+      if (err.elm === "password") {
         passwordErr = err.msg;
       }
     }
@@ -124,7 +123,7 @@ class RegisterForm extends React.Component {
         class="register-form form-wrapper"
         name="form"
         method="POST"
-        onSubmit={this.handleSubmit}
+        onSubmit={this.submitRegister}
       >
         <section>
           <div class="form-item">
@@ -137,6 +136,9 @@ class RegisterForm extends React.Component {
               value={this.state.value}
               onChange={this.onUsernameChange.bind(this)}
             />
+            <small className="danger-error">
+              {usernameErr ? usernameErr : ""}
+            </small>
           </div>
           <div class="form-item">
             <label>Email ID:</label>
@@ -148,6 +150,7 @@ class RegisterForm extends React.Component {
               value={this.state.value}
               onChange={this.onEmailChange.bind(this)}
             />
+            <small className="danger-error">{emailErr ? emailErr : ""}</small>
           </div>
 
           <div class="form-item">
@@ -178,23 +181,7 @@ class RegisterForm extends React.Component {
               {passwordErr ? passwordErr : ""}
             </small>
           </div>
-          <div className="terms-checkbox">
-            {/* <input
-              type="checkbox"
-              onChange={this.handleCheck}
-              defaultChecked={this.state.checked}
-            />
-            <p>this box is.</p> */}
-            {/* <Checkbox
-              label={"label"}
-              handleCheckboxChange={this.toogleCheckbox}
-              key={"label"}
-            /> */}
-            {/* <label className="terms-print">
-              By clicking the box, I affirm that I have read and agree to Babee
-              Play's Terms of Use and Privacy Policy.~
-            </label> */}
-          </div>
+          <div className="terms-checkbox"></div>
           <FormControlLabel
             control={
               <Checkbox
@@ -207,7 +194,15 @@ class RegisterForm extends React.Component {
             label="I agree to the terms of Unicorn Charity Club"
           />
 
-          <button className="register-btn">Register</button>
+          <button
+            disabled="true"
+            id="button"
+            className="register-btn"
+            type="submit"
+            onClick={this.submitRegister.bind(this)}
+          >
+            Register
+          </button>
         </section>
       </form>
     );

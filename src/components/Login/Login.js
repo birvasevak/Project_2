@@ -121,7 +121,7 @@ class LoginForm extends React.Component {
     this.setState(prevState => {
       let newArr = [];
       for (let err of prevState.errors) {
-        if (elm != err.elm) {
+        if (elm !== err.elm) {
           newArr.push(err);
         }
       }
@@ -140,9 +140,9 @@ class LoginForm extends React.Component {
   }
 
   submitLogin(e) {
-    if (this.state.email == "") {
+    if (this.state.email === "") {
       this.showValidationErr("Email", "Email cannot be empty");
-    } else if (this.state.password == "") {
+    } else if (this.state.password === "") {
       this.showValidationErr("Password", "Password cannot be empty");
     }
   }
@@ -151,10 +151,10 @@ class LoginForm extends React.Component {
     let emailErr = null,
       passwordErr = null;
     for (let err of this.state.errors) {
-      if (err.elm == "email") {
+      if (err.elm === "email") {
         emailErr = err.msg;
       }
-      if (err.elm == "password") {
+      if (err.elm === "password") {
         passwordErr = err.msg;
       }
     }

@@ -40,6 +40,7 @@ class App extends Component {
         <div className="App">
           <div className="content-wrapper">
             {/* <Register /> */}
+            {/* <Login /> */}
             <Header />
             <Navbar />
 
