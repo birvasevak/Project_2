@@ -4,6 +4,7 @@ import "../Header/Header.css";
 import "../Login/Login.css";
 import Mobile_logo from "../../image/Logo-mobile.png";
 import DesktopLogo from "../../site_media/Logo_Horizontal_No_Tagline.png";
+import { Checkbox, FormControlLabel, Button } from "@material-ui/core";
 
 class Register extends React.Component {
   render() {
@@ -95,6 +96,14 @@ class RegisterForm extends React.Component {
     }
   }
 
+  toggleCheckbox = label => {
+    if (this.selectedCheckboxes.has(label)) {
+      this.selectedCheckboxes.delete(label);
+    } else {
+      this.selectedCheckboxes.add(label);
+    }
+  };
+
   render() {
     let usernameErr = null,
       emailErr = null,
@@ -112,13 +121,14 @@ class RegisterForm extends React.Component {
     }
     return (
       <form
-        class="register-form"
+        class="register-form form-wrapper"
         name="form"
         method="POST"
         onSubmit={this.handleSubmit}
       >
         <section>
           <div class="form-item">
+            <label>Username:</label>
             <input
               name="username"
               type="text"
@@ -129,8 +139,8 @@ class RegisterForm extends React.Component {
             />
           </div>
           <div class="form-item">
+            <label>Email ID:</label>
             <input
-              // maxlength="254"
               name="username"
               type="text"
               id="email"
@@ -141,6 +151,7 @@ class RegisterForm extends React.Component {
           </div>
 
           <div class="form-item">
+            <label>Password:</label>
             <input
               name="password"
               type="password"
@@ -149,10 +160,54 @@ class RegisterForm extends React.Component {
               value={this.state.value}
               onChange={this.onPasswordChange.bind(this)}
             />
-            {/* <small className="danger-error">
+            <small className="danger-error">
               {passwordErr ? passwordErr : ""}
-            </small> */}
+            </small>
           </div>
+          <div class="form-item">
+            <label>Password Confirmation:</label>
+            <input
+              name="password-confirmation"
+              type="password"
+              id="password"
+              placeholder="Password Confirmation"
+              value={this.state.value}
+              onChange={this.onPasswordChange.bind(this)}
+            />
+            <small className="danger-error">
+              {passwordErr ? passwordErr : ""}
+            </small>
+          </div>
+          <div className="terms-checkbox">
+            {/* <input
+              type="checkbox"
+              onChange={this.handleCheck}
+              defaultChecked={this.state.checked}
+            />
+            <p>this box is.</p> */}
+            {/* <Checkbox
+              label={"label"}
+              handleCheckboxChange={this.toogleCheckbox}
+              key={"label"}
+            /> */}
+            {/* <label className="terms-print">
+              By clicking the box, I affirm that I have read and agree to Babee
+              Play's Terms of Use and Privacy Policy.~
+            </label> */}
+          </div>
+          <FormControlLabel
+            control={
+              <Checkbox
+                // checked={this.state.checkedB}
+                // onChange={this.handleChange("checkedB")}
+                value="checkedB"
+                style={{ color: "#1cbfec" }}
+              />
+            }
+            label="I agree to the terms of Unicorn Charity Club"
+          />
+
+          <button className="register-btn">Register</button>
         </section>
       </form>
     );

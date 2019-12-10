@@ -98,3 +98,127 @@ a {
   text-decoration: none;
   /* color: #ffffff; */
 }
+
+.form-wrapper {
+  height: auto;
+  width: auto;
+  margin-left: 20%;
+  margin-right: 10px;
+}
+
+.register__form {
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+  width: 100%;
+  float: center;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.register__form input {
+  margin-left: auto;
+  /* margin-right: auto; */
+}
+
+/***************************/
+
+.register-form {
+  float: left;
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+  /* /* margin-top: 30px; */
+  padding-top: 20px;
+}
+
+.register-form label {
+  padding-top: calc(0.375rem + 1px);
+  padding-bottom: calc(0.375rem + 1px);
+  margin-bottom: 0;
+  font-size: inherit;
+  line-height: 1.5;
+  float: left;
+  color: #000;
+  font-weight: bold;
+  /* width: 50%; */
+}
+.register-form input {
+  /* position: relative; */
+  /* float: center; */
+  display: block;
+  margin-left: 20px;
+  width: 100%;
+
+  padding: 0.375rem 0.75rem;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: #000;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+::-webkit-input-placeholder {
+  font-size: 0.8rem;
+  color: #808080;
+}
+
+.terms-checkbox {
+  margin-top: 10px;
+  float: left;
+}
+
+.terms-checkbox p {
+  display: flex;
+  flex-flow: row;
+}
+
+.terms-print {
+  float: right;
+}
+
+.register-btn {
+  float: right;
+  background: #1cbfec;
+  color: #ffffff;
+  padding: 10px 15px;
+  /* margin-left: 5px; */
+  margin-top: 65px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  -webkit-appearance: none;
+  -webkit-border-radius: 5px !important;
+}
+
+@media only screen and (max-width: 40em) {
+  .register-form {
+    position: relative;
+    width: auto;
+  }
+}
+
+@media only screen and (max-width: 40em) {
+  .register-form input {
+    /* position: relative; */
+    width: auto;
+  }
+}
+
+@media only screen and (max-width: 40em) {
+  .register-form label {
+    margin-left: 0px;
+  }
+}
+
+@media only screen and (max-width: 40em) {
+  .form-wrapper {
+    margin-left: 20%;
+  }
+}
