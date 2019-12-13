@@ -8,6 +8,27 @@ import Grid from "@material-ui/core/Grid/";
 import Paper from "@material-ui/core/Paper";
 
 class Projects extends React.Component {
+  createProjects = () => {
+    const n = 5;
+    let projects = [];
+    projects.length = n;
+    let i,
+      j,
+      k = 0;
+
+    for (i = 0; i < 2; i++) {
+      for (j = 0; j < 3; j++) {
+        projects.push(
+          // <div class="grid-wrapper">
+          <div style={{ gridColumn: i, gridRow: j }}>One</div>
+          // </div>
+        );
+      }
+    }
+
+    return projects;
+  };
+
   render() {
     return (
       // <div>
@@ -30,9 +51,10 @@ class Projects extends React.Component {
           </div>
 
           <div class="grid-wrapper">
-            <div class="one">One</div>
+            {this.createProjects()}
+            {/* <div class="one">One</div>
             <div class="one1">One</div>
-            <div class="one2">One</div>
+            <div class="one2">One</div> */}
           </div>
         </div>
 

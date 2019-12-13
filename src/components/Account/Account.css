@@ -22,7 +22,7 @@
   border-bottom-width: 100%;
   border-bottom: 1px solid rgb(126, 123, 123);
   border-bottom-width: 100%;
-  padding: 20px 10px 40px 10px;
+  padding: 20px 10px 0px 10px;
 }
 .menu__item_title a {
   margin-left: 15px;
@@ -34,6 +34,20 @@
   font-family: "TeX";
   font-size: 17px;
   padding: 5px 5px 15px 5px;
+  align-items: center;
+}
+
+.menu__item_title textarea {
+  border: none;
+  margin-left: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #000;
+  font-size: 1.75rem;
+  text-decoration: none;
+  font-family: "TeX";
+  font-size: 17px;
+  padding: 5px 5px 0px 5px;
   align-items: center;
 }
 
@@ -56,6 +70,20 @@
   font-family: "TeX";
   font-size: 17px;
   padding: 5px 5px 15px 5px;
+  align-items: center;
+}
+
+.menu__item textarea {
+  border: none;
+  width: 75%;
+  margin-left: 30px;
+  margin-bottom: 10px;
+  color: #000;
+  font-size: 1.75rem;
+  text-decoration: none;
+  font-family: "TeX";
+  font-size: 17px;
+  padding: 5px 5px 0px 5px;
   align-items: center;
 }
 

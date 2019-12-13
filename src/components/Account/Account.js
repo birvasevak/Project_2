@@ -37,28 +37,33 @@ class Account extends React.Component {
           </div>
           <div className="menu__content">
             <div className="menu__item_title">
-              <a href="/"> Name</a>
+              {/* <a href="/"> Name</a> */}
+              <textarea placeholder="Name">Name</textarea>
               <img src={Settings_camera} alt="Settings_camera" />
             </div>
-            <div className="menu__item">
+            <div className="menu__item" style={{ paddingBottom: "0px" }}>
               <img src={Settings_home} alt="Settings_home" />
-              <a href="/"> Address</a>
+              {/* <a href="/"> Address</a> */}
+              <textarea placeholder="Address">Address</textarea>
             </div>
-            <div className="menu__item">
+            <div className="menu__item" style={{ paddingBottom: "0px" }}>
               <img src={Settings_email} alt="Settings_email" />
-              <a href="/"> Email</a>
+              {/* <a href="/"> Email</a> */}
+              <textarea placeholder="Email">Email</textarea>
             </div>
-            <div className="menu__item">
+            <div className="menu__item" style={{ paddingBottom: "0px" }}>
               <img
                 src={Settings_mobile}
                 alt="Settings_mobile"
-                style={{ width: "20px", paddingRight: "10px" }}
+                style={{ width: "27px", paddingRight: "10px" }}
               />
-              <a href="/"> Mobile</a>
+              {/* <a href="/"> Mobile</a> */}
+              <textarea placeholder="Mobile">Mobile</textarea>
             </div>
-            <div className="menu__item">
+            <div className="menu__item" style={{ paddingBottom: "0px" }}>
               <img src={Settings_notifications} alt="Settings_notifications" />
-              <a href="/"> Notifications</a>
+              {/* <a href="/"> Notifications</a> */}
+              <textarea placeholder="Notifications">Notifications</textarea>
             </div>
           </div>
           {/* </div> */}
