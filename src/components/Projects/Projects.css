@@ -66,6 +66,7 @@
   padding: 1em;
   color: #d9480f;
 }
+
 .grid-wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);

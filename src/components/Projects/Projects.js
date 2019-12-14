@@ -12,17 +12,11 @@ class Projects extends React.Component {
     const n = 5;
     let projects = [];
     projects.length = n;
-    let i,
-      j,
-      k = 0;
+    let i, j;
 
-    for (i = 0; i < 2; i++) {
-      for (j = 0; j < 3; j++) {
-        projects.push(
-          // <div class="grid-wrapper">
-          <div style={{ gridColumn: i, gridRow: j }}>One</div>
-          // </div>
-        );
+    for (i = 1; i < 3; i++) {
+      for (j = 1; j < 4; j++) {
+        projects.push(<div style={{ gridColumn: i, gridRow: j }}>One</div>);
       }
     }
 
@@ -51,10 +45,10 @@ class Projects extends React.Component {
           </div>
 
           <div class="grid-wrapper">
-            {this.createProjects()}
-            {/* <div class="one">One</div>
+            {/* {this.createProjects()} */}
+            <div class="one">One</div>
             <div class="one1">One</div>
-            <div class="one2">One</div> */}
+            <div class="one2">One</div>
           </div>
         </div>
 

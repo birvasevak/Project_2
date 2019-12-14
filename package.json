@@ -33,5 +33,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "react-stripe-checkout": "^2.6.3",
+    "stripe": "^7.14.0"
   }
 }
