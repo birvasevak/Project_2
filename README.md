@@ -74,17 +74,19 @@ Refer website: https://nodejs.org/en/
 ### install dependencies for react
 
 Follow the list of dependencied from package.json file
-Run command on Node.js command prompt:
-'npm install --save react' @version 16.12.0
-'npm install --save react-bootstrap' @version 11.0.0-beta.16
-'npm install --save -dom' @version 16.12.0
-'npm install --save react-router' @version 5.1.2
-'npm install --save react-scripts' @version 3.2.0
-'npm install --save validator' @version 12.1.0
-'npm install --save @material-ui/core' @version 4.7.2
-'npm install --save @material-ui/icons' @version 4.5.1
+Run command on Node.js command prompt: <br />
+'npm install --save react' @version 16.12.0 <br />
+'npm install --save react-bootstrap' @version 11.0.0-beta.16 <br />
+'npm install --save -dom' @version 16.12.0 <br />
+'npm install --save react-router' @version 5.1.2 <br />
+'npm install --save react-scripts' @version 3.2.0 <br />
+'npm install --save validator' @version 12.1.0 <br />
+'npm install --save @material-ui/core' @version 4.7.2 <br />
+'npm install --save @material-ui/icons' @version 4.5.1 <br />
 
-For development Dependencies:
-'npm install --save-dev jsdoc' @version 3.6.3
-'npm install --save-dev react-stripe-checkout' @version 2.6.3
-'npm install --save-dev stripe' @version 7.14.0
+### install developnment dependencies for react
+
+Run command on Node.js command prompt:<br />
+'npm install --save-dev jsdoc' @version 3.6.3 <br />
+'npm install --save-dev react-stripe-checkout' @version 2.6.3 <br />
+'npm install --save-dev stripe' @version 7.14.0 <br />
