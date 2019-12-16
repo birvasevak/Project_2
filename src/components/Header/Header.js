@@ -12,12 +12,32 @@ import Mobile_toolbar from "../Mobile_toolbar/Mobile_toolbar";
 import { NavLink } from "react-router-dom";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Homepage from "../Homepage/Homepage";
+import App from "../../App";
 
+/**
+ * @class Header
+ * @type {Header}
+ * @call <Header />
+ * @style Header.css
+ * @extends React.Component
+ * @exports {Header}
+ * @example <Header />
+ * @returns Header
+ * with UCC logo, dropdown for children, settings icon
+ *
+ */
 class Header extends React.Component {
   render() {
+    /**
+     * @style Header.css
+     */
     return (
       <Router>
         <header className="header">
+          {/** headwer for mobile device
+           * @className header__mobile-child-select
+           * @style .header__mobile-child-select
+           */}
           <div className="header__mobile-child-select">
             <div className="child-select__item">
               <div
@@ -76,20 +96,21 @@ class Header extends React.Component {
                           alt="Unicorn Charity Club"
                         />
                       </a>
-
-                      <div className="header-menu-mobile">
-                        <img
-                          className="return-button"
-                          src={Arrow_forward}
-                          alt="Forward Arrow"
-                        />
-                      </div>
+                      <NavLink to={"/"}>
+                        <div className="header-menu-mobile">
+                          <img
+                            className="return-button"
+                            src={Arrow_forward}
+                            alt="Forward Arrow"
+                          />
+                        </div>
+                      </NavLink>
                     </div>
                   </div>
                 </div>
-                <div className="child-select-title-mobile">
+                {/* <div className="child-select-title-mobile">
                   Who wants to play and learn?
-                </div>
+                </div> */}
 
                 <Toolbar />
               </div>
@@ -102,6 +123,7 @@ class Header extends React.Component {
             </div>
           </NavLink>
         </header>
+        <Route path="/" exact component={App} />
         <Route path="/Homepage" exact component={Homepage}>
           {/* <Homepage /> */}
         </Route>

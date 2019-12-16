@@ -6,6 +6,11 @@ import { BrowserRouter } from "react-router-dom";
 import { createBrowserHistory } from "history";
 import * as serviceWorker from "./serviceWorker";
 
+/**
+ * to start running this project install Node.js on your device.
+ * @version 10.16.3
+ * @see [Node.js](https://nodejs.org/en/) for installation
+ */
 const history = createBrowserHistory();
 
 //ReactDOM.render(What do I want to render, where do I want to render it#ID);

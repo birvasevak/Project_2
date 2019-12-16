@@ -228,6 +228,7 @@
 
 @media only screen and (max-width: 40em) {
   .child-select__info {
+    float: left;
     margin-left: 110px;
     margin-top: 10px;
   }
@@ -278,7 +279,7 @@
     height: 100%;
     left: 0px;
     top: 0px;
-    background: #117076;
+    background: #ffffff;
     overflow: auto;
   }
 }
@@ -339,7 +340,7 @@
 
 @media only screen and (max-width: 40em) {
   .child-select__item {
-    background: #1e8e95;
+    background: #fff;
     padding: 0px;
   }
 }

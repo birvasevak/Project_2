@@ -13,7 +13,7 @@
 
 @media only screen and (max-width: 40em) {
   .child-select__name {
-    color: #fff;
+    color: #000;
     font-size: 1.25rem;
     margin-bottom: 5px;
     font-weight: normal;
@@ -22,7 +22,7 @@
 
 .child-select__age {
   display: block;
-  color: #fff;
+  color: #1e8e95;
   font-size: 0.9375rem;
   margin-bottom: 15px;
 }
@@ -46,7 +46,7 @@
 
 @media only screen and (max-width: 40em) {
   .child-select__name {
-    color: #fff;
+    color: #1e8e95;
     font-size: 1.25rem;
     margin-bottom: 5px;
     font-weight: normal;
@@ -60,7 +60,8 @@
 }
 
 .add-child-mobile {
-  margin: 20px 0px;
+  float: left;
+  margin: 20px 200px;
   display: block;
 }
 
