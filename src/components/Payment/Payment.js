@@ -36,8 +36,8 @@ class Payment extends React.Component {
             <h1>Payment</h1>
           </div>
           {/* </div> */}
-          <StripeCheckout />
-          {/* <form action="/charge" method="post" id="payment-form">
+          {/* <StripeCheckout />
+          <form action="/charge" method="post" id="payment-form">
             <div class="form-row">
               <label for="card-element">Credit or debit card</label>
               <div id="card-element">
@@ -47,7 +47,7 @@ class Payment extends React.Component {
             </div>
 
             <button>Submit Payment</button>
-          </form>  */}
+          </form> */}
           <div className="pre-wrapper">
             <div className="form-items">
               <div>
@@ -72,51 +72,43 @@ class PaymentForm extends React.Component {
           value="K4bc8RzZD69sKo93NmbX1wS86aDJVaOg"
         />
 
-        <div
-          className="payment-errors alert alert-error"
-          style={{ color: "red" }}
-        >
+        <div class="payment-errors alert alert-error" style={{ color: "red" }}>
           The card number is not a valid credit card number.
         </div>
-        <div className="form-item">
+        <div class="form-item">
           <label>Please, enter your credit card details:</label>
           <br />
-          <div className="pre-box__cc">
-            <label className="" for="card">
+          <div class="pre-box__cc">
+            <label class="" for="card">
               Credit Card Number
             </label>
-            <div className="controls">
+            <div class="controls">
               <input
                 type="text"
                 id="card"
                 placeholder="•••• •••• •••• ••••"
-                className="visa identified"
+                class="visa identified"
                 data-stripe="number"
               />
             </div>
           </div>
         </div>
-        <div className="form-item">
-          <div className="pre-box__cc">
-            <label className="" for="exp_date">
+        <div class="form-item">
+          <div class="pre-box__cc">
+            <label class="" for="exp_date">
               Expiration date (MM/YYYY)
             </label>
-            <input
-              type="text"
-              id="exp_date"
-              placeholder="•• / ••••"
-              className=""
-            />
+            <input type="text" id="exp_date" placeholder="•• / ••••" class="" />
           </div>
         </div>
-        <div className="form-item">
-          <div className="pre-box__cc">
-            <label className="" for="cvc">
+        <div class="form-item">
+          <div class="pre-box__cc">
+            <label class="" for="cvc">
               CVC/CVV
               <span
                 data-tooltip=""
                 aria-haspopup="true"
-                className="has-tip"
+                class="has-tip"
                 data-selector="tooltip-k4500ptk0"
                 aria-describedby="tooltip-k4500ptk0"
                 title=""
@@ -124,22 +116,22 @@ class PaymentForm extends React.Component {
                 (?)
               </span>
             </label>
-            <div className="controls">
+            <div class="controls">
               <input
                 type="text"
                 id="cvc"
                 size="4"
                 placeholder="•••"
-                className=""
+                class=""
                 data-stripe="cvc"
               />
             </div>
           </div>
         </div>
-        <div className="">
-          <div className="">
+        <div class="">
+          <div class="">
             <a>
-              <input type="submit" value="Pay" className="submit-button" />
+              <input type="submit" value="Change" class="submit-button" />
             </a>
           </div>
         </div>
