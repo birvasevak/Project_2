@@ -131,7 +131,7 @@ class PaymentForm extends React.Component {
         <div class="">
           <div class="">
             <a>
-              <input type="submit" value="Change" class="submit-button" />
+              <input type="submit" value="Pay" class="submit-button" />
             </a>
           </div>
         </div>

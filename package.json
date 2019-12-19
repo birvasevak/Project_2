@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@material-ui/core": "^4.7.2",
+    "@material-ui/core": "^4.8.0",
     "@material-ui/icons": "^4.5.1",
     "react": "^16.12.0",
     "react-bootstrap": "^1.0.0-beta.16",
@@ -35,6 +35,7 @@
     ]
   },
   "devDependencies": {
+    "jsdoc": "^3.6.3",
     "react-stripe-checkout": "^2.6.3",
     "stripe": "^7.14.0"
   }
