@@ -1,11 +1,13 @@
 import React, { Component } from "react";
+import SidebarProfile from "../SideBar-Profile/SideBarProfile";
+import FriendsMainSide from "./Friends_MainSide/Friends_MianSide";
 
 class Friends extends React.Component {
   render() {
     return (
       <div>
-        <h3>The friends page</h3>
-        <p>Content here</p>
+        <FriendsMainSide />
+        <SidebarProfile />
       </div>
     );
   }

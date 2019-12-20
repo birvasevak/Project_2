@@ -1,0 +1,64 @@
+.Friends_RightSide{
+    position: relative;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 70%;
+    right: 1%;
+    height: 100%;
+    float: right;
+}
+@media only screen and (max-width: 40em) {
+    .Friends_RightSide{
+        position: relative;
+        padding-left: 0;
+        padding-right: 0;
+        float: left;
+        right: 0%;
+        width: 100%;
+        background-color: #fff;
+    }
+}
+
+.My_Contact{
+    width: 100%;
+    margin-top: 10px;
+    float: right;
+}
+
+.Title_header{
+    width: 100%;
+    height: 60px;
+    flex-direction: row;
+    position: relative;
+    display: inline-flex;
+    border-bottom: 1px solid rgb(126, 123, 123);
+}
+
+.Parts_Text{
+    padding-left: 20px;
+    padding-top: 15px;
+    width: 16%;
+    font-size: 1rem;
+    font-weight: 300;
+    color: black;
+    text-align: center;
+}
+.Search_Bar{
+    width: 50%;
+    padding-left: 90px;
+    padding-top: 15px;
+    color: #808080;
+}
+
+.Contact_part{
+    width: 100%;
+    min-height: 600px;
+}
+
+.Contact_icon_part{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: pink;
+}

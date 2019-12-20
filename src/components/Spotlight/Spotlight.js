@@ -1,11 +1,13 @@
 import React, { Component } from "react";
+import SidebarProfile from "../SideBar-Profile/SideBarProfile";
+import SptRightSide from "./Spt_Detail/Detail";
 
 class Spotlight extends React.Component {
   render() {
     return (
       <div>
-        <h3>The spotlight page</h3>
-        <p>Content here</p>
+          <SptRightSide />
+          <SidebarProfile />
       </div>
     );
   }
