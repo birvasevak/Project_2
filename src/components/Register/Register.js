@@ -8,9 +8,23 @@ import { Checkbox, FormControlLabel, Button } from "@material-ui/core";
 import { NavLink } from "react-router-dom";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Login from "../Login/Login";
+import firebaseapi from "../../config/firebaseapi";
 // import axios from "axios";
 
 class Register extends React.Component {
+  Register(e) {
+    e.preventDefault();
+    firebaseapi
+      .auth()
+      .createUserWithEmailAndPassword(this.state.email, this.state.password)
+      .then(u => {})
+      .then(u => {
+        console.log(u);
+      })
+      .catch(error => {
+        console.log(error);
+      });
+  }
   render() {
     return (
       <Router>
