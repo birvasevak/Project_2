@@ -13,6 +13,16 @@
   background: #fff;
 }
 
+@media only screen and (max-width: 40em) {
+  .main-view {
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    left: 0%;
+  }
+}
+
 .post {
   position: relative;
 }

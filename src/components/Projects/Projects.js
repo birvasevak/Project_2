@@ -3,9 +3,7 @@ import "./Projects.css";
 import Arrow_backward from "../../image/arrow-backward.png";
 import { NavLink } from "react-router-dom";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Homepage from "../Homepage/Homepage";
-import Grid from "@material-ui/core/Grid/";
-import Paper from "@material-ui/core/Paper";
+import CharityProject from "./CharityProject";
 
 class Projects extends React.Component {
   createProjects = () => {
@@ -44,15 +42,40 @@ class Projects extends React.Component {
             </div>
           </div>
 
-          <div class="grid-wrapper">
+          <div className="grid-wrapper">
             {/* {this.createProjects()} */}
-            <div class="one">One</div>
-            <div class="one1">One</div>
-            <div class="one2">One</div>
+
+            <div className="one">
+              <NavLink to={"/Projects/CharityProject"} className="NavLink">
+                Project One
+              </NavLink>
+            </div>
+
+            <div className="two">
+              <NavLink to={"/Projects/CharityProject"} className="NavLink">
+                Project Two
+              </NavLink>
+            </div>
+            <div className="three">
+              <NavLink to={"/Projects/CharityProject"} className="NavLink">
+                Project Three
+              </NavLink>
+            </div>
+
+            <div className="newProject">
+              <NavLink to={"/Projects/CharityProject"} className="NavLink">
+                Add New Project
+              </NavLink>
+            </div>
           </div>
         </div>
 
         {/* <Route path="/" exact component={Homepage} /> */}
+        <Route
+          path="/Projects/CharityProject"
+          exact
+          component={CharityProject}
+        />
       </Router>
     );
   }

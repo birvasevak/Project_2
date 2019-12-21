@@ -9,14 +9,15 @@
   background: #ffffff;
   z-index: 1000;
   overflow: scroll;
-  height: auto;
+  /* height: auto; */
+  height: 100%;
 }
 
-@media only screen and (min-width: 40.063em) {
+/* @media only screen and (min-width: 40.063em) {
   .mobile-toolbar-menu {
     display: none;
   }
-}
+} */
 
 /* @media only screen and (max-width: 40em) {
   .mobile-toolbar-menu {

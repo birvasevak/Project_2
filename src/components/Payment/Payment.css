@@ -50,7 +50,7 @@
 
 .pre-wrapper {
   width: 100%;
-  margin-left: auto;
+  margin-left: 25px;
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 0;
@@ -76,7 +76,8 @@
 
 .form-item input[type="email"],
 .form-item input[type="text"],
-.form-item input[type="password"] {
+.form-item input[type="password"],
+.form-item input[type="number"] {
   margin-top: 5px;
   padding: 12px;
   display: block;

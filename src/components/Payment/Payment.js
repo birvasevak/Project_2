@@ -33,7 +33,7 @@ class Payment extends React.Component {
             {/* <div className="account-menu__item">
               <a href="/"> Address</a>
             </div> */}
-            <h1>Payment</h1>
+            <h1 style={{ marginLeft: "25px" }}>Payment</h1>
           </div>
           {/* </div> */}
           {/* <StripeCheckout />
@@ -72,8 +72,16 @@ class PaymentForm extends React.Component {
           value="K4bc8RzZD69sKo93NmbX1wS86aDJVaOg"
         />
 
-        <div class="payment-errors alert alert-error" style={{ color: "red" }}>
+        {/* <div class="payment-errors alert alert-error" style={{ color: "red" }}>
           The card number is not a valid credit card number.
+        </div> */}
+        <div class="form-item">
+          <label class="" for="card">
+            Your payment amount
+          </label>
+          <div class="controls">
+            <input type="number" id="amount" placeholder="$ 0.00" />
+          </div>
         </div>
         <div class="form-item">
           <label>Please, enter your credit card details:</label>
