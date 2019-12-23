@@ -11,6 +11,8 @@ import ProjectActivities from "../../site_media/Charity Project_Project Activiti
 import CharityImpactReport from "../../site_media/Charity Project_Impact Report_3b9f9d.png";
 import CharityInfo from "../../site_media/Charity Project_Contact Info_3b9f9d.png";
 import PrintIcon from "../../site_media/Charity Project_Project Activity Print_3b9f9d.png";
+import ProjectMeetings from "./Project_pages/ProjectMeetings";
+import ProjectReport from "./Project_pages/ProjectReport";
 
 class CharityProject extends React.Component {
   constructor() {
@@ -60,7 +62,7 @@ class CharityProject extends React.Component {
           <div className="editIcon"></div>
           <div className="editLabel">Edit </div>
 
-          <div className="projectIcon">
+          <div className="project-emblem">
             <div className="projectTitle">Charity_Name</div>
             <NavLink to="/www.charityname.com" className="projectLink">
               www.charityname.com
@@ -96,7 +98,7 @@ class CharityProject extends React.Component {
           <div className="Outline">
             {/* <div className="subheadings">Project Meetings</div> */}
             <div className="projeactPages">
-              <NavLink to={"/ProjectMeetings"}>
+              <NavLink to={"/Project/CharityProject/ProjectMeetings"}>
                 <div
                   className="pageTitles"
                   style={{
@@ -104,14 +106,17 @@ class CharityProject extends React.Component {
                     borderTop: "1px solid rgb(126, 123, 123)"
                   }}
                 >
-                  <img src={ProjectActivities} alt="child avatar" />
+                  <img src={ProjectActivities} alt="project activities" />
+
                   <a href="/ProjectMeetings">Project Meetings</a>
                 </div>
               </NavLink>
-              <NavLink to={"/MyImpactReport"}>
+              <NavLink to={"/Projects/CharityProject/MyImpactReport"}>
                 <div className="pageTitles">
                   <img src={CharityImpactReport} alt="child avatar" />
-                  <a href="/MyImpactReport">My Impact Report</a>
+                  <a href="/Projects/CharityProject/MyImpactReport">
+                    My Impact Report
+                  </a>
                 </div>
               </NavLink>
               <NavLink to={"/CharityContactInfo"}>
@@ -121,7 +126,9 @@ class CharityProject extends React.Component {
                 </div>
               </NavLink>
             </div>
-            <div className="outlineHeading">Project Meetings</div>
+            <NavLink to="/Project/CharityProject/ProjectMeetings">
+              <div className="outlineHeading">Project Meetings</div>
+            </NavLink>
             <div className="outlineSubheading">Exploration</div>
             <div className="ProjectSection">
               <div className="Spt_project">
@@ -249,6 +256,16 @@ class CharityProject extends React.Component {
         {/* <ProjectsSidebar />
         </div> */}
         <Route path="/Projects" exact component={Projects} />
+        <Route
+          path="/Project/CharityProject/ProjectMeetings"
+          exact
+          component={ProjectMeetings}
+        />
+        <Route
+          path="/Projects/CharityProject/MyImpactReport"
+          exact
+          component={ProjectReport}
+        />
       </Router>
     );
   }
