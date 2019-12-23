@@ -128,7 +128,9 @@ class LoginForm extends React.Component {
         console.log(error);
       });
   }
-
+  getCurrentUID() {
+    return firebaseapi.auth().currentUser.uid;
+  }
   showValidationErr(elm, msg) {
     this.setState(prevState => ({
       errors: [...prevState.errors, { elm, msg }]
