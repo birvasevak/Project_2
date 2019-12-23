@@ -19,6 +19,7 @@ import Login from "./components/Login/Login";
 import ChildForm from "./components/MyChildren/ChildForm";
 import Register from "./components/Register/Register";
 import firebaseapi from "./config/firebaseapi";
+import Account from "./components/Account/Account";
 //import UnicornHeart from "../src/site_media/Bottom Menu_Home_Unicorn Heart.png"
 //import Toolbar from './components/Toolbar/Toolbar';
 //import sideDrawer from './components/SideDrawer/SideDrawer';
@@ -62,6 +63,7 @@ class App extends Component {
                   <Route path="/Spotlight" component={Spotlight} />
                   <Route path="/Friends" component={Friends} />
                   <Route path="/Yearbook" component={Yearbook} />
+                  <Route path="/Account" component={Account} />
                 </Switch>
                 <Sidebar />
               </div>
