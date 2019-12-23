@@ -1,11 +1,25 @@
 import React, { Component } from "react";
 import "./Projects.css";
 import Arrow_backward from "../../image/arrow-backward.png";
-import { NavLink } from "react-router-dom";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect
+} from "react-router-dom";
 import CharityProject from "./CharityProject";
+import SidebarProfile from "../SideBar-Profile/SideBarProfile";
 
 class Projects extends React.Component {
+  super() {
+    this.state = { isProjectsOpen: true };
+  }
+
+  closeProjects = () => {
+    this.setState = { isProjectsOpen: false };
+  };
+
   createProjects = () => {
     const n = 5;
     let projects = [];
@@ -46,7 +60,11 @@ class Projects extends React.Component {
             {/* {this.createProjects()} */}
 
             <div className="one">
-              <NavLink to={"/Projects/CharityProject"} className="NavLink">
+              <NavLink
+                to={"/Projects/CharityProject"}
+                className="NavLink"
+                // onClick={this.closeProjects}
+              >
                 Project One
               </NavLink>
             </div>
@@ -63,12 +81,17 @@ class Projects extends React.Component {
             </div>
 
             <div className="newProject">
-              <NavLink to={"/Projects/CharityProject"} className="NavLink">
+              <NavLink
+                to={"/Projects/CharityProject"}
+                className="NavLink"
+                onClick={() => this.closeProjects()}
+              >
                 Add New Project
               </NavLink>
             </div>
           </div>
         </div>
+        {/* <SidebarProfile /> */}
 
         {/* <Route path="/" exact component={Homepage} /> */}
         <Route
@@ -76,6 +99,14 @@ class Projects extends React.Component {
           exact
           component={CharityProject}
         />
+        {/* <Route
+          path="/Projects/CharityProject"
+          exact
+          strict
+          render={() =>
+            this.state.closeProjects ? <CharityProject /> : <Redirect to="/" />
+          }
+        /> */}
       </Router>
     );
   }
