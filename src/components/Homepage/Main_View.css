@@ -6,9 +6,8 @@
   border-style: solid;
   border-color: #716e70;
   border-width: 1px;
-  width: 45%;
-  left: 25%;
-  right: 30%;
+  width: 48%;
+
   float: left;
   background: #fff;
 }
@@ -65,14 +64,14 @@
 
 .Line {
   border-top: 1px solid #e9ebee;
-  margin: 0 12px;
+
   padding: 8px 0;
 }
 .Block {
   position: relative;
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
-  width: 25%;
+  width: 33%;
 
   right: auto;
   float: left;
@@ -80,7 +79,7 @@
 }
 
 .Photos-text {
-  color: #4b4f56;
+  color: #1f2022;
   display: inline-block;
 }
 
@@ -95,7 +94,7 @@
   margin-top: 0;
   margin-bottom: 0;
   padding-top: 5px;
-  padding-left: 20px;
+  padding-left: 0px;
 }
 
 /* Style buttons */
@@ -104,11 +103,12 @@
 
   font-size: 15px; /* Set a font size */
   cursor: pointer; /* Mouse pointer on hover */
+  transition: transform 0.2s; /* Animation */
 }
 
 /* Darker background on mouse-over */
 .btn:hover {
-  background-color: rgb(198, 206, 231);
+  transform: scale(1.2);
 }
 .btn span.photo-icon {
   background: url(../../site_media/Images/Tags_Photos.png) no-repeat;
@@ -134,5 +134,6 @@
 
 a:link {
   text-decoration: none;
+  color: #4b4f56;
   /* color: rgb(28, 155, 113); */
 }
