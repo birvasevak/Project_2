@@ -3,12 +3,11 @@
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
   width: 75%;
-  height: 100%;
+  height: 130%;
   left: 25%;
   right: auto;
   float: left;
   padding-right: 20px;
-  height: 100%;
   background-color: #ffffff;
   overflow: scroll;
 }
@@ -18,7 +17,7 @@
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
     width: 100%;
-    height: 100%;
+    height: 130%;
     left: 0%;
     right: auto;
     float: left;
@@ -165,7 +164,7 @@
     float: left;
     right: 0%;
     width: 100%;
-    height: 100%;
+    height: 190%;
     overflow: scroll;
     background-color: #fff;
   }
@@ -192,6 +191,14 @@
     border-width: 1px;
     width: 100%;
   }
+}
+
+.Outline p {
+  margin-left: 15px;
+  margin-right: 15px;
+  color: #000;
+  font-size: 16px;
+  text-align: justify;
 }
 
 .desktopOutline {
@@ -606,6 +613,12 @@
   height: 50px;
 }
 
+.uploadButton-mobile {
+  margin-left: 0px;
+  margin-top: 45px;
+  width: 55%;
+}
+
 .impactForm {
   margin-top: 10px;
   margin-left: 15px;
@@ -618,11 +631,13 @@
 .impact-item label {
   padding-top: calc(0.375rem + 1px);
   padding-bottom: calc(0.375rem + 1px);
-  margin-bottom: 0;
+  margin-bottom: 0px;
+  /* margin-top: 20px; */
   font-size: inherit;
   line-height: 1.5;
   /* float: left; */
   color: #000;
+  vertical-align: baseline;
 }
 
 .impact-item input {
@@ -668,17 +683,18 @@
 }
 
 .sign-label {
-  margin-left: 150px;
+  margin-left: 170px;
   margin-top: 20px;
   font-size: 15px;
   font-weight: bold;
   color: #000;
 }
+
 .signature-box {
   margin-top: 10px;
-  margin-left: 150px;
-  margin-right: 150px;
-  widows: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
   border: 2px solid black;
   padding: 15px;
   text-align: center;
@@ -700,4 +716,18 @@
   border-radius: 5px;
   font-size: 15px;
   font-weight: bolder;
+}
+
+@media only screen and (max-width: 40em) {
+  .sign-label {
+    margin-left: 30px;
+  }
+  .signature-box {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .submitButton {
+    margin-right: 15px;
+    width: 92%;
+  }
 }

@@ -3,12 +3,11 @@
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
   width: 66%;
-  height: 100%;
   left: 25%;
   right: auto;
   float: left;
   padding-right: 20px;
-  height: 100%;
+  height: 125%;
   background-color: #ffffff;
   overflow: scroll;
 }
@@ -18,7 +17,7 @@
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
     width: 100%;
-    height: 100%;
+    height: 150%;
     left: 0%;
     right: auto;
     float: left;
@@ -31,7 +30,7 @@
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
   width: 100%;
-  height: 115%;
+  height: 130%;
   float: right;
   margin-right: auto;
   background-color: #ffffff;
@@ -46,7 +45,7 @@
     float: left;
     right: 0%;
     width: 100%;
-    height: 100%;
+    height: 190%;
     overflow: scroll;
     background-color: #fff;
   }
@@ -132,4 +131,57 @@
   width: 100%;
   font-size: 0.9rem;
   color: #4d4d4d;
+}
+
+.presentation-text {
+  color: #000;
+  font-weight: bold;
+  text-align: justify;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.video-box {
+  width: 80%;
+  height: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+  border: 1px solid #000;
+  color: #4d4d4d;
+  text-align: center;
+  vertical-align: middle;
+}
+
+@media only screen and (max-width: 40em) {
+  .video-box {
+    height: 185px;
+  }
+}
+
+.printIcon-activity {
+  position: relative;
+  width: 50px;
+  float: left;
+  height: 30px;
+  margin-top: 85px;
+  /* text-align: end; */
+  color: #3f9b9d;
+  text-align: right;
+  text-align-last: right;
+  margin-inline: 15px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("../../../site_media/Charity Project_Project Activity Print_3b9f9d.png");
+}
+
+@media only screen and (max-width: 40em) {
+  .printIcon-activity {
+    margin-top: 65px;
+  }
+}
+
+.print-text {
+  margin-top: 10px;
+  margin-left: 40px;
 }

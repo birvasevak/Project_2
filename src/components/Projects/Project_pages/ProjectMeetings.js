@@ -5,6 +5,8 @@ import { NavLink } from "react-router-dom";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Arrow_backward from "../../../image/arrow-backward.png";
 import CharityProject from "../CharityProject";
+import ProjectActivities from "./ProjectActivities";
+import ProjectPresentation from "./ProjectPresentation";
 
 class ProjectMeetings extends React.Component {
   render() {
@@ -50,21 +52,39 @@ class ProjectMeetings extends React.Component {
                   <div className="Spt_articles">
                     <div className="Articles_icons"></div>
                     <div className="Article_text">
-                      <div className="Article_Type">PRESENTATION</div>
+                      <NavLink
+                        to={
+                          "/Project/CharityProject/ProjectMeetings/Presentation"
+                        }
+                      >
+                        <div className="Article_Type">PRESENTATION</div>
+                      </NavLink>
                       <div className="Article_Title">Title:</div>
                     </div>
                   </div>
                   <div className="Spt_articles">
                     <div className="Articles_icons"></div>
                     <div className="Article_text">
-                      <div className="Article_Type">ACTIVITY</div>
+                      <NavLink
+                        to={
+                          "/Project/CharityProject/ProjectMeetings/Activities"
+                        }
+                      >
+                        <div className="Article_Type">ACTIVITY</div>
+                      </NavLink>
                       <div className="Article_Title">Title:</div>
                     </div>
                   </div>
                   <div className="Spt_articles">
                     <div className="Articles_icons"></div>
                     <div className="Article_text">
-                      <div className="Article_Type">ACTIVITY</div>
+                      <NavLink
+                        to={
+                          "/Project/CharityProject/ProjectMeetings/Activities"
+                        }
+                      >
+                        <div className="Article_Type">ACTIVITY</div>
+                      </NavLink>
                       <div className="Article_Title">Title:</div>
                     </div>
                   </div>
@@ -85,6 +105,16 @@ class ProjectMeetings extends React.Component {
           path="/Projects/CharityProjects"
           exact
           component={CharityProject}
+        />
+        <Route
+          path="/Project/CharityProject/ProjectMeetings/Presentation"
+          exact
+          component={ProjectPresentation}
+        />
+        <Route
+          path="/Project/CharityProject/ProjectMeetings/Activities"
+          exact
+          component={ProjectActivities}
         />
       </Router>
     );

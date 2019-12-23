@@ -146,10 +146,12 @@ class CharityProject extends React.Component {
             </div>
           </div>
           <div className="desktopOutline">
-            <div className="outlineHeading">
-              My Impact Report
-              <div className="printIcon"></div>
-            </div>
+            <NavLink to={"/Projects/CharityProject/MyImpactReport"}>
+              <div className="outlineHeading">
+                My Impact Report
+                <div className="printIcon"></div>
+              </div>
+            </NavLink>
             <div className="ProjectSection">
               <div className="Spt_project">
                 <div className="Project_icons"></div>

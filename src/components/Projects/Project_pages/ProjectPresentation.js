@@ -6,7 +6,7 @@ import Arrow_backward from "../../../image/arrow-backward.png";
 import CharityProject from "../CharityProject";
 import ProjectMeetings from "./ProjectMeetings";
 
-class ProjectActivities extends React.Component {
+class ProjectPresentation extends React.Component {
   render() {
     return (
       <Router>
@@ -23,7 +23,7 @@ class ProjectActivities extends React.Component {
                   </a>
                 </NavLink>
               </div>
-              <div className="header-title">Project Activities</div>
+              <div className="header-title">Project Presentation</div>
             </div>
           </div>
           <div className="projects-centralpart">
@@ -45,21 +45,12 @@ class ProjectActivities extends React.Component {
                 <h4>Exploration</h4>
               </div>
               <p className="presentation-text">
-                ACTIVITIES <br />
-                Get-a-Job Preparation
+                PRESENTATION <br />
+                Prep for Success Exploration Presentation
               </p>
-              <div className="ProjectSection">
-                <div className="Spt_project">
-                  <div className="Project_icons"></div>
-                </div>
-
-                <div className="printIcon-activity">
-                  <div className="print-text">Print</div>
-                </div>
-              </div>
-              {/* <NavLink to={"/www.youtube.com"}>
+              <NavLink to={"/www.youtube.com"}>
                 <div className="video-box">upload your video here</div>
-              </NavLink> */}
+              </NavLink>
               <p>Description of the video and your presentation.</p>
               <button className="submitButton">DONE</button>
             </div>
@@ -75,4 +66,4 @@ class ProjectActivities extends React.Component {
   }
 }
 
-export default ProjectActivities;
+export default ProjectPresentation;
