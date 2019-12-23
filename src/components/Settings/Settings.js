@@ -3,8 +3,6 @@ import Setting_icon from "../../image/settings.png";
 import "./Settings.css";
 import firebaseapi from "../../config/firebaseapi";
 import { NavLink } from "react-router-dom";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Account from "../Account/Account";
 
 class Settings extends Component {
   constructor(props) {
@@ -16,25 +14,22 @@ class Settings extends Component {
   }
   render() {
     return (
-      <Router>
-        <div className="header__settings">
-          <div className="setting-icon">
-            <img src={Setting_icon} alt="settings" />
+      <div className="header__settings">
+        <div className="setting-icon">
+          <img src={Setting_icon} alt="settings" />
 
-            <div className="settings-dropdown">
-              <NavLink to={"/Account"}>
-                <a href="/" className="logout-link">
-                  <div className="settings-dropdown__item">My&nbsp;Account</div>
-                </a>
-              </NavLink>
-              <a href="/" onClick={this.logout} className="logout-link">
-                <div className="settings-dropdown__item">Logout</div>
+          <div className="settings-dropdown">
+            <NavLink to={"/Account"}>
+              <a href="/" className="logout-link">
+                <div className="settings-dropdown__item">My&nbsp;Account</div>
               </a>
-            </div>
+            </NavLink>
+            <a href="/" onClick={this.logout} className="logout-link">
+              <div className="settings-dropdown__item">Logout</div>
+            </a>
           </div>
-          <Route path="/Account" exact component={Account} />
         </div>
-      </Router>
+      </div>
     );
   }
 }
