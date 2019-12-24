@@ -1,9 +1,37 @@
+/** @import modules
+ * 'npm i --save react'
+ * 'npm i --save react-router-dom'
+ * 'npm i --save firebase'
+ */
 import React, { Component } from "react";
-import Setting_icon from "../../image/settings.png";
-import "./Settings.css";
-import firebaseapi from "../../config/firebaseapi";
 import { NavLink } from "react-router-dom";
+import Setting_icon from "../../image/settings.png";
+import firebaseapi from "../../config/firebaseapi";
+/** @import CSS styles */
+import "./Settings.css";
 
+/**
+ * @description Creates the Settings menu page for the user
+ * @class Settings
+ * @extends React.Component
+ * @type {Settings}
+ * @example <Settings />
+ * pre-condition: all the imports
+ * post-condition: returns the settings menu page
+ * @param null
+ * @returns {Settings}
+ * @todo connect to database
+ */
+/**
+ * @function constructor
+ * @param {props} props
+ * @returns {props}
+ */
+/**
+ * @function logout
+ * @param null
+ * @returns {signOut}
+ */
 class Settings extends Component {
   constructor(props) {
     super(props);

@@ -1,11 +1,40 @@
+/** @import modules
+ * 'npm i --save react'
+ * 'npm i --save react-router-dom'
+ * 'npm i --save react-switch'
+ */
 import React, { Component } from "react";
 import Switch from "react-switch";
-import "../Projects.css";
 import { NavLink } from "react-router-dom";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Arrow_backward from "../../../image/arrow-backward.png";
 import CharityProject from "../CharityProject";
+/** @import CSS styles */
+import "../Projects.css";
 
+/**
+ * @description Creates a page for the project report
+ * @class ProjectReport
+ * @implements BroweserRouter as Router
+ * @extends React.Component
+ * @type {ProjectReport}
+ * @example <ProjectReport />
+ * pre-condition: all the imports
+ * post-condition: returns a page with project report
+ * @param null
+ * @returns {ProjectReport}
+ * @todo connect to database to fetch and upload project data
+ */
+/**
+ * @function constructor
+ * @param null
+ * @returns {element}
+ */
+/**
+ * @function handleSwitchChange
+ * @param {boolean} checked
+ * @returns {boolean}
+ */
 class ProjectReport extends React.Component {
   constructor() {
     super();

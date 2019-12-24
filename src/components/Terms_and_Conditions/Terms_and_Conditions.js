@@ -1,11 +1,27 @@
+/** @import modules
+ * 'npm i --save react'
+ * 'npm i --save react-router-dom'
+ */
 import React, { Component } from "react";
-import Arrow_backward from "../../image/arrow-backward.png";
-import "./Terms_and_Conditions.css";
-import "../Mobile_toolbar/Mobile_toolbar.css";
 import { NavLink } from "react-router-dom";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Arrow_backward from "../../image/arrow-backward.png";
 import Mobile_toolbar from "../Mobile_toolbar/Mobile_toolbar";
+/** @import CSS styles */
+import "./Terms_and_Conditions.css";
+import "../Mobile_toolbar/Mobile_toolbar.css";
 
+/**
+ * @description Displays Terms and Conditions text
+ * @class Terms_and_Conditions
+ * @extends React.Component
+ * @type {Text}
+ * @example <Terms_and_Conditions />
+ * pre-condition: all the imports
+ * post-condition: returns the Terms and Conditions text
+ * @returns {Terms_and_Conditions}
+ * @todo insert the required text
+ */
 class Terms_and_Conditions extends React.Component {
   render() {
     return (

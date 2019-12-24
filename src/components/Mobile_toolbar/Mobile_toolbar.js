@@ -1,19 +1,34 @@
+/** @import modules
+ * 'npm i --save react'
+ * 'npm i --save react-router-dom'
+ */
 import React, { Component } from "react";
-import "./Mobile_toolbar.css";
+import { NavLink } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import Arrow_forward from "../../image/arrow-forward.png";
 import Arrow_backward from "../../image/arrow-backward.png";
-import { NavLink } from "react-router-dom";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Account from "../Account/Account";
 import MyChildren from "../MyChildren/MyChildren";
 import Payment from "../Payment/Payment";
 import Terms_and_Conditions from "../Terms_and_Conditions/Terms_and_Conditions";
 import Security_and_Privacy from "../Security_and_Privacy/Security_and_Privacy";
 import Navbar from "../Navbar/Navbar";
+/** @import CSS styles */
+import "./Mobile_toolbar.css";
 
 /**
+ * @description Creates the a menu toolbar for mobile version
  * @class Mobile_toolbar
+ * @implements BroweserRouter as Router
+ * @extends React.Component
+ * @type {Mobile_toolbar}
+ * @example <Mobile_toolbar />
+ * pre-condition: all the imports
+ * post-condition: returns the menu page for mobile version
+ * @param null
+ * @returns {Mobile_toolbar}
  */
+
 class Mobile_toolbar extends Component {
   super() {
     this.state = { isMenuOpen: true };

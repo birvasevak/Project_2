@@ -1,3 +1,8 @@
+/** @import modules
+ * 'npm i --save react'
+ * 'npm i --save react-router-dom'
+ * 'npm i --save react-bootstrap'
+ */
 import React, { Component } from "react";
 import {
   Form,
@@ -7,15 +12,29 @@ import {
   FormControl,
   DatePicker
 } from "react-bootstrap";
-import "./MyChildren.css";
-import Arrow_backward from "../../image/arrow-backward.png";
-import "../Account/Account.css";
 import { NavLink } from "react-router-dom";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import MyChildren from "./MyChildren";
+import Arrow_backward from "../../image/arrow-backward.png";
 import Child_avatar from "../../site_media/Child Settings Menu_Default Avatar_3b9f9d.png";
 import Impact_emblem from "../../site_media/Child Profile_Emblem Default_3b9f9d.png";
+/** @import CSS styles */
+import "../Account/Account.css";
+import "./MyChildren.css";
 
+/**
+ * @description Creates a page with all details of individual child
+ * @class ChildName
+ * @implements BroweserRouter as Router
+ * @extends React.Component
+ * @type {ChildName}
+ * @example <ChildName />
+ * pre-condition: all the imports
+ * post-condition: returns a page with all details of individual child
+ * @param null
+ * @returns {ChildName}
+ * @todo connect to database to fetch and upload children details
+ */
 class ChildName extends React.Component {
   render() {
     return (
@@ -44,7 +63,6 @@ class ChildName extends React.Component {
                 <div className="header-link">Save</div>
               </div>
             </div>
-            {/* <div className="page"> */}
             <div className="avatar">
               <img src={Child_avatar} alt="upload photo" />
               <a href="/">Upload Photo</a>
@@ -56,7 +74,6 @@ class ChildName extends React.Component {
               <a href="/">Upload Photo</a>
             </div>
           </div>
-          {/* </div> */}
           <Route path="/Menu/MyChildren" exact component={MyChildren} />
         </Form>
       </Router>
@@ -64,6 +81,19 @@ class ChildName extends React.Component {
   }
 }
 
+/**
+ * @description Creates a form for all details of individual child
+ * @class ChildForm
+ * @implements BroweserRouter as Router
+ * @extends React.Component
+ * @type {ChildForm}
+ * @example <ChildForm />
+ * pre-condition: all the imports
+ * post-condition: returns a form for all details of individual child
+ * @param null
+ * @returns {ChildForm}
+ * @todo connect to database to fetch and upload children details
+ */
 class ChildForm extends React.Component {
   render() {
     return (

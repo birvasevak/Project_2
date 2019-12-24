@@ -1,11 +1,29 @@
+/** @import modules
+ * 'npm i --save react'
+ * 'npm i --save react-router-dom'
+ */
 import React, { Component } from "react";
-import "../Projects.css";
 import { NavLink } from "react-router-dom";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Arrow_backward from "../../../image/arrow-backward.png";
 import CharityProject from "../CharityProject";
 import ProjectMeetings from "./ProjectMeetings";
+/** @import CSS styles */
+import "../Projects.css";
 
+/**
+ * @description Creates a page of all the details of the project presentation
+ * @class ProjectPresentation
+ * @implements BroweserRouter as Router
+ * @extends React.Component
+ * @type {ProjectPresentation}
+ * @example <ProjectPresentation />
+ * pre-condition: all the imports
+ * post-condition: returns a page for  project presentation details
+ * @param null
+ * @returns {ProjectPresentation}
+ * @todo connect to database to fetch and upload project presentation details
+ */
 class ProjectPresentation extends React.Component {
   render() {
     return (

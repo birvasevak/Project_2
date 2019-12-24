@@ -1,19 +1,46 @@
+/** @import modules
+ * 'npm i --save react'
+ * 'npm i --save react-router-dom'
+ * 'npm i --save react-switch'
+ */
 import React, { Component } from "react";
 import Switch from "react-switch";
-import "./Projects.css";
-import Arrow_backward from "../../image/arrow-backward.png";
 import { NavLink } from "react-router-dom";
 import { BrowserRouter as Router, Route } from "react-router-dom";
+import Arrow_backward from "../../image/arrow-backward.png";
 import Projects from "./Projects";
-import Navbar from "../Navbar/Navbar";
-import ProjectsSidebar from "./ProjectsSidebar";
 import ProjectActivities from "../../site_media/Charity Project_Project Activities_3b9f9d.png";
 import CharityImpactReport from "../../site_media/Charity Project_Impact Report_3b9f9d.png";
 import CharityInfo from "../../site_media/Charity Project_Contact Info_3b9f9d.png";
 import PrintIcon from "../../site_media/Charity Project_Project Activity Print_3b9f9d.png";
 import ProjectMeetings from "./Project_pages/ProjectMeetings";
 import ProjectReport from "./Project_pages/ProjectReport";
+/** @import CSS styles */
+import "./Projects.css";
 
+/**
+ * @description Creates a page for Charity project details
+ * @class CharityProject
+ * @implements BroweserRouter as Router
+ * @extends React.Component
+ * @type {CharityProject}
+ * @example <CharityProject />
+ * pre-condition: all the imports
+ * post-condition: returns a page for Charity project details
+ * @param null
+ * @returns {CharityProject}
+ * @todo connect to database to fetch and upload charity project details
+ */
+/**
+ * @function constructor
+ * @param null
+ * @returns {element}
+ */
+/**
+ * @function handleSwitchChange
+ * @param {boolean} checked
+ * @returns {boolean}
+ */
 class CharityProject extends React.Component {
   constructor() {
     super();

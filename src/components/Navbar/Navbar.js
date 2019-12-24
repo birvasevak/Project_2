@@ -1,8 +1,24 @@
+/** @import modules
+ * 'npm i --save react'
+ * 'npm i --save react-router-dom'
+ */
 import React, { Component } from "react";
-// import "../../App.css";
-import "./Navbar.css";
 import { NavLink } from "react-router-dom";
+/** @import CSS styles */
+import "./Navbar.css";
 
+/**
+ * @description Creates a navigatin bar to switch between pages
+ * @class Navbar
+ * @implements BroweserRouter as Router
+ * @extends React.Component
+ * @type {Navbar}
+ * @example <Navbar />
+ * pre-condition: all the imports
+ * post-condition: returns a navigation bar
+ * @param null
+ * @returns {Navbar}
+ */
 class Navbar extends React.Component {
   render() {
     return (

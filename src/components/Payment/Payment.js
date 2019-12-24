@@ -1,13 +1,32 @@
+/** @import modules
+ * 'npm i --save react'
+ * 'npm i --save react-router-dom'
+ * 'npm i --save react-stripe-checkout'
+ * 'npm i --save stripe'
+ */
 import React, { Component } from "react";
-import Arrow_backward from "../../image/arrow-backward.png";
-import "./Payment.css";
-import "../Mobile_toolbar/Mobile_toolbar.css";
 import { NavLink } from "react-router-dom";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Mobile_toolbar from "../Mobile_toolbar/Mobile_toolbar";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import StripeCheckout from "react-stripe-checkout";
-// import { Stripe } from "stripe";
+import Arrow_backward from "../../image/arrow-backward.png";
+import "../Mobile_toolbar/Mobile_toolbar.css";
+import Mobile_toolbar from "../Mobile_toolbar/Mobile_toolbar";
+/** @import CSS styles */
+import "./Payment.css";
 
+/**
+ * @description Creates a payment portal
+ * @class Payment
+ * @implements BroweserRouter as Router
+ * @extends React.Component
+ * @type {Payment}
+ * @example <Payment />
+ * pre-condition: all the imports
+ * post-condition: returns the payment portal
+ * @param null
+ * @returns {Payment}
+ * @todo connect to database to fetch payment amount and process the payment
+ */
 class Payment extends React.Component {
   render() {
     return (
@@ -30,24 +49,9 @@ class Payment extends React.Component {
             <div className="header-title">Payment</div>
           </div>
           <div className="account-menu__content">
-            {/* <div className="account-menu__item">
-              <a href="/"> Address</a>
-            </div> */}
             <h1 style={{ marginLeft: "25px" }}>Payment</h1>
           </div>
-          {/* </div> */}
-          {/* <StripeCheckout />
-          <form action="/charge" method="post" id="payment-form">
-            <div class="form-row">
-              <label for="card-element">Credit or debit card</label>
-              <div id="card-element">
-              </div>
 
-              <div id="card-errors" role="alert"></div>
-            </div>
-
-            <button>Submit Payment</button>
-          </form> */}
           <div className="pre-wrapper">
             <div className="form-items">
               <div>
@@ -62,6 +66,19 @@ class Payment extends React.Component {
   }
 }
 
+/**
+ * @description Creates a form for the payment portal
+ * @class PaymentForm
+ * @implements BroweserRouter as Router
+ * @extends React.Component
+ * @type {PaymentForm}
+ * @example <PaymentForm />
+ * pre-condition: all the imports
+ * post-condition: returns the form for the payment portal
+ * @param null
+ * @returns {PaymentForm}
+ * @todo connect to database to fetch payment amount and process the payment
+ */
 class PaymentForm extends React.Component {
   render() {
     return (
@@ -72,9 +89,6 @@ class PaymentForm extends React.Component {
           value="K4bc8RzZD69sKo93NmbX1wS86aDJVaOg"
         />
 
-        {/* <div class="payment-errors alert alert-error" style={{ color: "red" }}>
-          The card number is not a valid credit card number.
-        </div> */}
         <div class="form-item">
           <label class="" for="card">
             Your payment amount

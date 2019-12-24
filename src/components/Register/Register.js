@@ -1,16 +1,40 @@
+/** @import modules
+ * 'npm i --save react'
+ * 'npm i --save react-router-dom'
+ * 'npm i --save @material-ui/core'
+ */
 import React, { Component } from "react";
+import { Checkbox, FormControlLabel, Button } from "@material-ui/core";
+import { NavLink } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import Mobile_logo from "../../image/Logo-mobile.png";
+import DesktopLogo from "../../site_media/Logo_Horizontal_No_Tagline.png";
+import Login from "../Login/Login";
+import firebaseapi from "../../config/firebaseapi";
+/** @import CSS styles */
 import "./Register.css";
 import "../Header/Header.css";
 import "../Login/Login.css";
-import Mobile_logo from "../../image/Logo-mobile.png";
-import DesktopLogo from "../../site_media/Logo_Horizontal_No_Tagline.png";
-import { Checkbox, FormControlLabel, Button } from "@material-ui/core";
-import { NavLink } from "react-router-dom";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Login from "../Login/Login";
-import firebaseapi from "../../config/firebaseapi";
-// import axios from "axios";
 
+/**
+ * @description Creates the registration page for the website
+ * @class Register
+ * @implements BroweserRouter as Router
+ * @extends React.Component
+ * @type {Register}
+ * @example <Register />
+ * pre-condition: all the imports
+ * post-condition: returns the registration page
+ * @param null
+ * @returns {Register}
+ * @todo connect to database to creat the user
+ */
+
+/**
+ * @function Register
+ * @param {element} e
+ * @returns {element}
+ */
 class Register extends React.Component {
   Register(e) {
     e.preventDefault();
@@ -68,6 +92,65 @@ class Register extends React.Component {
 }
 export default Register;
 
+/**
+ * @description Creates a form for registration page
+ * @class RegisterForm
+ * @implements BroweserRouter as Router
+ * @extends React.Component
+ * @type {RegisterForm}
+ * @example <RegisterForm />
+ * pre-condition: all the imports
+ * post-condition: returns the registration form
+ * @param null
+ * @returns {RegisterForm}
+ * @todo connect to database to creat the user
+ */
+
+/**
+ * @function constructor
+ * @param {props} props
+ * @returns {props}
+ */
+/**
+ * @function showValidationErr
+ * @param {element} elm
+ * @param {string} msg
+ * @description shows validatin errors
+ * @returns {msg} returns error message for invalidation
+ *
+ */
+/**
+ * @function clearValidationErr
+ * @param {element} elm
+ * @description clears validation error for refreshed page
+ * @returns {string} error
+ */
+
+/**
+ * @function onUsernameChange
+ * @param {element} e
+ * @description changes the content of username to user input
+ * @returns {element}
+ */
+/**
+ * @function onEmailChange
+ * @param {element} e
+ * @description changes the content of email ID to user input
+ * @returns {element}
+ */
+
+/**
+ * @function onPasswordChange
+ * @param {element} e
+ * @description changes the content of password to user input
+ * @returns {element}
+ */
+/**
+ * @function submitRegister
+ * @param {element} e
+ * @description submits the register page to check for validation
+ * @returns {element}
+ */
 class RegisterForm extends React.Component {
   constructor(props) {
     super(props);

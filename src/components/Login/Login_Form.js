@@ -22,7 +22,7 @@ import "./Login.css";
  * pre-condition: all the imports
  * post-condition: returns the login form
  * @param null
- * @exports {Login_Form}
+ * @returns {Login_Form}
  * @todo connect to database for individual user
  */
 

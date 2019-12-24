@@ -1,11 +1,26 @@
+/** @import modules
+ * 'npm i --save react'
+ */
 import React, { Component } from "react";
 import Arrow_backward from "../../image/arrow-backward.png";
-import "./Security_and_Privacy.css";
-import "../Mobile_toolbar/Mobile_toolbar.css";
 import { NavLink } from "react-router-dom";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Mobile_toolbar from "../Mobile_toolbar/Mobile_toolbar";
+/** @import CSS styles */
+import "./Security_and_Privacy.css";
+import "../Mobile_toolbar/Mobile_toolbar.css";
 
+/**
+ * @description Displays Security and Privacy text
+ * @class Security_and_Privacy
+ * @extends React.Component
+ * @type {Text}
+ * @example <Security_and_Privacy />
+ * pre-condition: all the imports
+ * post-condition: returns the Security and Privacy text
+ * @returns {Security_and_Privacy}
+ * @todo insert the required text
+ */
 class Security_and_Privacy extends React.Component {
   render() {
     return (

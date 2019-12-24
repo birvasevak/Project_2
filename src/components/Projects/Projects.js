@@ -1,16 +1,28 @@
+/** @import modules
+ * 'npm i --save react'
+ * 'npm i --save react-router-dom'
+ */
 import React, { Component } from "react";
-import "./Projects.css";
-import Arrow_backward from "../../image/arrow-backward.png";
 import { NavLink, Link } from "react-router-dom";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Redirect
-} from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import CharityProject from "./CharityProject";
-import SidebarProfile from "../SideBar-Profile/SideBarProfile";
+import Arrow_backward from "../../image/arrow-backward.png";
+/** @import CSS styles */
+import "./Projects.css";
 
+/**
+ * @description Creates the grid view of all the projects user is enrolled in
+ * @class Projects
+ * @implements BroweserRouter as Router
+ * @extends React.Component
+ * @type {Projects}
+ * @example <Projects />
+ * pre-condition: all the imports
+ * post-condition: returns the grid view of all the projects
+ * @param null
+ * @returns {Projects}
+ * @todo connect to database to fetch the projects of the user
+ */
 class Projects extends React.Component {
   super() {
     this.state = { isProjectsOpen: true };
@@ -37,20 +49,14 @@ class Projects extends React.Component {
 
   render() {
     return (
-      // <div>
-      //   <h3>The project page</h3>
-      //   <p>Content here</p>
-      // </div>
       <Router>
         <div className="content">
           <div className="page" style={{ display: "block" }}>
             <div className="header__wrapper">
               <div className="header-menu-mobile">
-                {/* <NavLink to={"/"}> */}
                 <a href="/">
                   <img src={Arrow_backward} alt="Backward Arrow" />
                 </a>
-                {/* </NavLink> */}
               </div>
               <div className="header-title">My Charity Projects</div>
             </div>

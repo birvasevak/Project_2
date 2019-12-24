@@ -1,15 +1,32 @@
+/** @import modules
+ * 'npm i --save react'
+ * 'npm i --save react-router-dom'
+ */
 import React, { Component } from "react";
-import Arrow_backward from "../../image/arrow-backward.png";
-// import "./MyChildren.css";
-import "../Account/Account.css";
-import "../Mobile_toolbar/Mobile_toolbar.css";
 import { NavLink } from "react-router-dom";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import Arrow_backward from "../../image/arrow-backward.png";
 import Mobile_toolbar from "../Mobile_toolbar/Mobile_toolbar";
 import Add_child from "../../site_media/Child Settings Menu_Add Child_3b9f9d.png";
 import Child_avatar from "../../site_media/Child Settings Menu_Default Avatar_3b9f9d.png";
 import ChildName from "./ChildName";
+/** @import CSS styles */
+import "../Account/Account.css";
+import "../Mobile_toolbar/Mobile_toolbar.css";
 
+/**
+ * @description Creates a page with list of kinds under that account
+ * @class MyChildren
+ * @implements BroweserRouter as Router
+ * @extends React.Component
+ * @type {MyChildren}
+ * @example <MyChildren />
+ * pre-condition: all the imports
+ * post-condition: returns a page with list of kinds under that account
+ * @param null
+ * @returns {MyChildren}
+ * @todo connect to database to get the list of kids under that account
+ */
 class MyChildren extends React.Component {
   render() {
     return (

@@ -1,7 +1,18 @@
+/** @import modules
+ * 'npm i --save react'
+ * 'npm i --save react-router-dom'
+ * 'npm i --save firebase'
+ */
 import React, { Component, useState, useEffect } from "react";
-
-import "./SideBarProfile.css";
 import firebaseapi from "../../config/firebaseapi";
+/** @import CSS styles */
+import "./SideBarProfile.css";
+
+/**
+ * @function UserData
+ * @function useEffect
+ * @returns {data}
+ */
 function UserData() {
   const [data, setData] = useState([]);
 
@@ -19,6 +30,11 @@ function UserData() {
   }, []);
   return data;
 }
+
+/**
+ * @constant {SideBarProfile}
+ * @returns {SidebarProfile}
+ */
 const SidebarProfile = () => {
   const data = UserData();
 
