@@ -23,7 +23,7 @@
     border-style: solid;
     border-color: #716e70;
     border-width: 1px;
-    width: 100%;
+    width: 100% !important;
     min-height: 100px;
     float: left;
     background-color: #fff;
@@ -118,6 +118,7 @@
   font-weight: 300;
   color: #3b9f9d;
   margin-top: 10px;
+  margin-bottom: 20px;
 }
 @media only screen and (max-width: 40em) {
   .Text {
