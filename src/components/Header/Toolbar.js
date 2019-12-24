@@ -1,13 +1,29 @@
+/** @import modules
+ * 'npm i --save react'
+ * 'npm i --save react-router-dom'
+ */
 import React, { Component } from "react";
+import { BrowserRouter as Router } from "react-router-dom";
+import Add_child from "../../image/add-child-button-mobile.png";
+/** @import CSS styles */
 import "./Header.css";
 import "./Toolbar.css";
-import { NavLink } from "react-router-dom";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Arrow_forward from "../../image/arrow-forward.png";
-import Mobile_logo from "../../image/Logo-mobile.png";
-import Desktop_logo from "../../image/desktop_logo.png";
-import Add_child from "../../image/add-child-button-mobile.png";
 
+/**
+ * @description Creates the toolbar section in the header with
+ * list of kids and settings icon
+ * @class Toolbar
+ * @implements BroweserRouter as Router
+ * @extends React.Component
+ * @type {Toolbar}
+ * @example <Toolbar />
+ * pre-condition: all the imports
+ * post-condition: returns the a dropdown of kids under that account
+ * and settings icon
+ * @param null
+ * @returns {Toolbar}
+ * @todo connect to database to get all the kids under that account
+ */
 class Toolbar extends Component {
   render() {
     return (

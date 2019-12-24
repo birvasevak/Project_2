@@ -1,7 +1,22 @@
+/** @import modules
+ * 'npm i --save react'
+ */
 import React, { Component } from "react";
-
+/** @import CSS styles */
 import "./NotifBar.css";
 
+/**
+ * @description Creates the Notification center with calender and messages
+ * @class NotifBar
+ * @extends React.Component
+ * @type {NotifBar}
+ * @example <NotifBar />
+ * pre-condition: all the imports
+ * post-condition: returns the notification centre with calender and messages
+ * @param null
+ * @returns {NotifBar}
+ * @todo connect to database
+ */
 class NotifBar extends Component {
   render() {
     return (

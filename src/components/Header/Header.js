@@ -1,18 +1,33 @@
-// src/components/Header/index.js
+/** @import modules
+ * 'npm i --save react'
+ * 'npm i --save react-router-dom'
+ */
 import React, { Component } from "react";
-import "./Header.css";
+import { NavLink } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import Settings from "../Settings/Settings";
-// import Horizontal_logo from "../../image/Logo_Horizontal-No_Background_080719.png";
 import Mobile_logo from "../../image/Logo-mobile.png";
 import DesktopLogo from "../../site_media/Logo_Horizontal_No_Tagline.png";
 import Arrow_forward from "../../image/arrow-forward.png";
 import Toolbar from "./Toolbar";
 import Mobile_menu_icon from "../../site_media/Images/mobile_menu_icon.png";
 import Mobile_toolbar from "../Mobile_toolbar/Mobile_toolbar";
-import { NavLink } from "react-router-dom";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Homepage from "../Homepage/Homepage";
+/** @import CSS styles */
+import "./Header.css";
 
+/**
+ * @description Creates the header for bot mobile and desktop version
+ * @class Header
+ * @implements BroweserRouter as Router
+ * @extends React.Component
+ * @type {Header}
+ * @example <Header />
+ * pre-condition: all the imports
+ * post-condition: returns the header for both desktop and mobile version
+ * @param null
+ * @returns {Header}
+ */
 class Header extends React.Component {
   render() {
     return (

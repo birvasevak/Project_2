@@ -1,6 +1,22 @@
+/** @import modules
+ * 'npm i --save react'
+ */
 import React, { Component } from "react";
+/** @import CSS styles */
 import "./Main_View.css";
 
+/**
+ * @description Creates the the post section for Homepage
+ * @class Main_View
+ * @extends React.Component
+ * @type {Main_View}
+ * @example <Main_View />
+ * pre-condition: all the imports
+ * post-condition: returns the post section for Homepage
+ * @param null
+ * @returns {Main_View}
+ * @todo connect to database
+ */
 class Main_View extends React.Component {
   render() {
     return (

@@ -1,6 +1,22 @@
+/** @import modules
+ * 'npm i --save react'
+ */
 import React, { Component } from "react";
+/** @import CSS styles */
 import "./Footer.css";
 
+/**
+ * @description creates the footer for the website (only for desktop version)
+ * @class Footer
+ * @extends React.Component
+ * @type {Footer}
+ * @example <Footer />
+ * pre-condition: all the imports
+ * post-condition: returns footer for desktop version
+ * @param null
+ * @returns {Footer}
+ *
+ */
 class Footer extends React.Component {
   render() {
     return (

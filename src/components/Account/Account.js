@@ -1,23 +1,36 @@
+/** @import modules
+ * 'npm i --save react'
+ * 'npm i --save react-router-dom'
+ */
 import React, { Component } from "react";
-import Arrow_backward from "../../image/arrow-backward.png";
-import "./Account.css";
-// import "../Mobile_toolbar/Mobile_toolbar.css";
 import { NavLink } from "react-router-dom";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import Arrow_backward from "../../image/arrow-backward.png";
 import Mobile_toolbar from "../Mobile_toolbar/Mobile_toolbar";
 import Settings_camera from "../../site_media/Settings_Camera_3b9f9d.png";
 import Settings_email from "../../site_media/Settings_Email_3b9f9d.png";
 import Settings_home from "../../site_media/Settings_Address_3b9f9d.png";
 import Settings_mobile from "../../site_media/Settings_Mobile_3b9f9d.png";
 import Settings_notifications from "../../site_media/Settings_Notifications_3b9f9d.png";
+/** @import CSS styles */
+import "./Account.css";
 
+/**
+ * @description Creates the My Account page for the user
+ * @class Account
+ * @implements BroweserRouter as Router
+ * @extends React.Component
+ * @type {Account}
+ * @example <Account />
+ * pre-condition: all the imports
+ * post-condition: returns the Account page
+ * @param null
+ * @returns {Account}
+ * @todo connect to database for individual user
+ */
 class Account extends React.Component {
   render() {
     return (
-      // <div style={{ display: "block" }}>
-      //   <h1>Account</h1>
-      // </div>
-      // <div className="mobile-toolbar-menu" style={{ display: "block" }}>
       <Router>
         <div className="container">
           <div className="content">

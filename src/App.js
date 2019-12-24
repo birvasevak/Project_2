@@ -1,5 +1,5 @@
+/** importing modules */
 import React from "react";
-import "./App.css";
 import { Component } from "react";
 import Sidebar from "./components/SideBar-Profile/SideBarProfile";
 import Header from "./components/Header/Header";
@@ -11,18 +11,39 @@ import Friends from "./components/Friends/Friends";
 import Yearbook from "./components/Yearbook/Yearbook";
 import Footer from "./components/Footer/Footer";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Menu from "./components/Menu/Menu";
-import Mobile_logo from "./image/Logo-mobile.png";
-import Desktop_logo from "./image/desktop_logo.png";
-import Mobile_toolbar from "./components/Mobile_toolbar/Mobile_toolbar";
 import Login from "./components/Login/Login";
-import ChildForm from "./components/MyChildren/ChildForm";
-import Register from "./components/Register/Register";
 import firebaseapi from "./config/firebaseapi";
 import Account from "./components/Account/Account";
-//import UnicornHeart from "../src/site_media/Bottom Menu_Home_Unicorn Heart.png"
-//import Toolbar from './components/Toolbar/Toolbar';
-//import sideDrawer from './components/SideDrawer/SideDrawer';
+/** importing CSS styles */
+import "./App.css";
+
+/**
+ * @class App
+ * @name App
+ * @extends Component
+ * @type {App}
+ * @description This is the main page from where the program starts
+ * It connects all the other main pages of the application.
+ * @import "npm i --save react"
+ * @example <App />
+ * pre-condition: all the imports
+ * post-condition: returns the main page
+ */
+/**
+ * @function constructor
+ * @param {props} props
+ * @returns {props}
+ */
+/**
+ *  @function componentDidMount
+ * @param null
+ * @returns {authlistener}
+ */
+/**
+ * @function authlistener
+ * @param null
+ * @returns {onAuthStateChanged}
+ */
 
 class App extends Component {
   constructor(props) {
