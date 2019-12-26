@@ -7,7 +7,6 @@ class Friends extends React.Component {
     return (
       <div>
         <FriendsMainSide />
-        {/* <SidebarProfile /> */}
       </div>
     );
   }
