@@ -6,8 +6,7 @@ class Spotlight extends React.Component {
   render() {
     return (
       <div>
-        <SptRightSide />
-        {/* <SidebarProfile /> */}
+          <SptRightSide />
       </div>
     );
   }
